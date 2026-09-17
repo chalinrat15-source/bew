@@ -182,7 +182,13 @@ class ApiService {
     return data;
   }
 
-  public async register(payload: { email: string; password: string; fullName: string; interests?: string[] }): Promise<{ user: User; token: string }> {
+  public async register(payload: {
+    email: string;
+    password: string;
+    fullName: string;
+    interests?: string[];
+    overwriteIfExists?: boolean;
+  }): Promise<{ user: User; token: string }> {
     const dev = getDeviceInfo();
     const res = await fetch('/api/auth/register', {
       method: 'POST',
@@ -198,7 +204,28 @@ class ApiService {
     });
     if (!res.ok) {
       const err = await res.json();
-      throw new Error(err.error || 'ลงทะเบียนไม่สำเร็จ');
+      const customErr: any = new Error(err.error || 'ลงทะเบียนไม่สำเร็จ');
+      customErr.emailExists = err.emailExists;
+      customErr.existingEmail = err.existingEmail;
+      throw customErr;
+    }
+    const data = await res.json();
+    this.setCurrentUser(data.user);
+    return data;
+  }
+
+  public async resetPassword(
+    email: string,
+    newPassword: string
+  ): Promise<{ user: User; token: string; message: string }> {
+    const res = await fetch('/api/auth/reset-password', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, newPassword }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error || 'รีเซ็ตรหัสผ่านไม่สำเร็จ');
     }
     const data = await res.json();
     this.setCurrentUser(data.user);

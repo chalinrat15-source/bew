@@ -239,6 +239,7 @@ export default function App() {
             currentUser={currentUser}
             onExitAdmin={() => setViewMode('user')}
             onOpenAuth={() => handleOpenAuth('login')}
+            onAuthSuccess={(user) => setCurrentUser(user)}
           />
         ) : (
           <main className="flex-1">

@@ -82,20 +82,53 @@ async function startServer() {
   });
 
   app.post('/api/auth/register', (req: Request, res: Response) => {
-    const { email, password, fullName, interests, sessionId, page } = req.body;
+    const { email, password, fullName, interests, sessionId, page, overwriteIfExists } = req.body;
 
-    if (!email || !password || !fullName) {
-      return res.status(400).json({ error: 'กรุณากรอกข้อมูลให้ครบถ้วน (All fields required)' });
+    const cleanEmail = (email || '').trim().toLowerCase();
+    const cleanPassword = (password || '').trim();
+    const cleanFullName = (fullName || '').trim();
+
+    if (!cleanEmail || !cleanPassword) {
+      return res.status(400).json({ error: 'กรุณากรอกอีเมลและรหัสผ่านให้ครบถ้วน' });
     }
 
-    if (db.getUserByEmail(email)) {
-      return res.status(400).json({ error: 'อีเมลนี้ถูกใช้งานแล้ว (Email already in use)' });
+    const existingUser = db.getUserByEmail(cleanEmail);
+    if (existingUser) {
+      if (overwriteIfExists || existingUser.passwordHash === cleanPassword) {
+        // User confirmed overwrite or entered matching password
+        const updated = db.updateUser(existingUser.id, {
+          passwordHash: cleanPassword,
+          fullName: cleanFullName || existingUser.fullName,
+          interests: interests || existingUser.interests,
+          lastLoginAt: new Date().toISOString(),
+        }) || existingUser;
+
+        return res.json({
+          user: {
+            id: updated.id,
+            email: updated.email,
+            fullName: updated.fullName,
+            role: updated.role,
+            status: updated.status,
+            avatarUrl: updated.avatarUrl,
+            interests: updated.interests,
+          },
+          token: `token-${updated.id}-${Date.now()}`,
+          message: 'เข้าสู่ระบบและอัปเดตข้อมูลบัญชีเรียบร้อยแล้ว',
+        });
+      }
+
+      return res.status(400).json({
+        error: 'อีเมลนี้ถูกใช้งานแล้วในระบบ คุณสามารถกดเข้าสู่ระบบ หรือกดตั้งรหัสผ่านใหม่ได้ทันที',
+        emailExists: true,
+        existingEmail: cleanEmail,
+      });
     }
 
     const newUser = db.createUser({
-      email,
-      passwordHash: password,
-      fullName,
+      email: cleanEmail,
+      passwordHash: cleanPassword,
+      fullName: cleanFullName || 'สมาชิกใหม่',
       role: 'member',
       status: 'active',
       interests: interests || ['Learning', 'Health & Fitness'],
@@ -127,6 +160,39 @@ async function startServer() {
         interests: newUser.interests,
       },
       token: `token-${newUser.id}-${Date.now()}`,
+    });
+  });
+
+  app.post('/api/auth/reset-password', (req: Request, res: Response) => {
+    const cleanEmail = (req.body.email || '').trim().toLowerCase();
+    const cleanPassword = (req.body.newPassword || req.body.password || '').trim();
+
+    if (!cleanEmail || !cleanPassword) {
+      return res.status(400).json({ error: 'กรุณากรอกอีเมลและรหัสผ่านใหม่' });
+    }
+
+    const user = db.getUserByEmail(cleanEmail);
+    if (!user) {
+      return res.status(404).json({ error: 'ไม่พบบัญชีผู้ใช้อีเมลนี้ในระบบ' });
+    }
+
+    const updated = db.updateUser(user.id, {
+      passwordHash: cleanPassword,
+      lastLoginAt: new Date().toISOString(),
+    }) || user;
+
+    res.json({
+      message: 'รีเซ็ตรหัสผ่านและเข้าสู่ระบบสำเร็จ',
+      user: {
+        id: updated.id,
+        email: updated.email,
+        fullName: updated.fullName,
+        role: updated.role,
+        status: updated.status,
+        avatarUrl: updated.avatarUrl,
+        interests: updated.interests,
+      },
+      token: `token-${updated.id}-${Date.now()}`,
     });
   });
 
@@ -561,18 +627,40 @@ async function startServer() {
   app.post('/api/admin/members', (req: Request, res: Response) => {
     const { email, password, fullName, role, status, interests, adminId, adminName } = req.body;
 
-    if (!email || !password || !fullName) {
+    const cleanEmail = (email || '').trim().toLowerCase();
+    const cleanPassword = (password || '').trim();
+    const cleanFullName = (fullName || '').trim();
+
+    if (!cleanEmail || !cleanPassword || !cleanFullName) {
       return res.status(400).json({ error: 'กรุณากรอกข้อมูลให้ครบถ้วน (ชื่อ, อีเมล, รหัสผ่าน)' });
     }
 
-    if (db.getUserByEmail(email)) {
-      return res.status(400).json({ error: 'อีเมลนี้ถูกใช้งานแล้วในระบบ (Email already in use)' });
+    const existing = db.getUserByEmail(cleanEmail);
+    if (existing) {
+      const updated = db.updateUser(existing.id, {
+        fullName: cleanFullName,
+        passwordHash: cleanPassword,
+        role: role === 'admin' ? 'admin' : 'member',
+        status: status || 'active',
+        interests: Array.isArray(interests) && interests.length > 0 ? interests : existing.interests,
+      }) || existing;
+
+      db.logAdminAction({
+        adminId: adminId || 'usr-admin-1',
+        adminName: adminName || 'Admin',
+        action: 'Update Member',
+        targetType: 'member',
+        targetId: updated.id,
+        description: `อัปเดตข้อมูลผู้ใช้งาน: ${updated.fullName} (${updated.email}) บทบาท ${updated.role}`,
+      });
+
+      return res.status(200).json(updated);
     }
 
     const newUser = db.createUser({
-      email,
-      passwordHash: password,
-      fullName,
+      email: cleanEmail,
+      passwordHash: cleanPassword,
+      fullName: cleanFullName,
       role: role === 'admin' ? 'admin' : 'member',
       status: status || 'active',
       interests: Array.isArray(interests) && interests.length > 0 ? interests : ['Learning', 'Health & Fitness'],

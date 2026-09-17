@@ -85,9 +85,9 @@
     },
     {
       "email": "chalinrat15@gmail.com",
-      "passwordHash": "123",
-      "fullName": "456",
-      "role": "member",
+      "passwordHash": "123456",
+      "fullName": "Chalinrat (ผู้ดูแลระบบ)",
+      "role": "admin",
       "status": "active",
       "interests": [
         "Learning",
@@ -112,6 +112,35 @@
       "id": "usr-1789570549835-t22n",
       "createdAt": "2026-09-16T14:55:49.835Z",
       "updatedAt": "2026-09-16T14:55:49.835Z"
+    },
+    {
+      "email": "testuser99@example.com",
+      "passwordHash": "password123",
+      "fullName": "ทดสอบ ผู้ใช้ใหม่",
+      "role": "member",
+      "status": "active",
+      "interests": [
+        "Learning"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1534528742387?w=150&auto=format&fit=crop&q=80",
+      "id": "usr-1789615010595-7t5v",
+      "createdAt": "2026-09-17T03:16:50.595Z",
+      "updatedAt": "2026-09-17T03:16:50.595Z"
+    },
+    {
+      "email": "admin_created@example.com",
+      "passwordHash": "pass1234",
+      "fullName": "แอดมินสร้างให้",
+      "role": "member",
+      "status": "active",
+      "interests": [
+        "Learning"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1534528742690?w=150&auto=format&fit=crop&q=80",
+      "id": "usr-1789615246353-rq7q",
+      "createdAt": "2026-09-17T03:20:46.353Z",
+      "updatedAt": "2026-09-17T03:20:48.726Z",
+      "lastLoginAt": "2026-09-17T03:20:48.726Z"
     }
   ],
   "categories": [
@@ -1220,8 +1249,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.053Z",
+      "updatedAt": "2026-09-17T03:12:00.053Z"
     },
     {
       "id": "act-29",
@@ -1257,8 +1286,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.053Z",
+      "updatedAt": "2026-09-17T03:12:00.053Z"
     },
     {
       "id": "act-30",
@@ -1295,8 +1324,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.053Z",
+      "updatedAt": "2026-09-17T03:12:00.053Z"
     },
     {
       "id": "act-31",
@@ -1331,8 +1360,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.053Z",
+      "updatedAt": "2026-09-17T03:12:00.053Z"
     },
     {
       "id": "act-32",
@@ -1369,8 +1398,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     },
     {
       "id": "act-33",
@@ -1406,8 +1435,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     },
     {
       "id": "act-34",
@@ -1442,8 +1471,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     },
     {
       "id": "act-35",
@@ -1478,8 +1507,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     },
     {
       "id": "act-36",
@@ -1515,8 +1544,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     },
     {
       "id": "act-37",
@@ -1551,8 +1580,8 @@
         }
       ],
       "isActive": true,
-      "createdAt": "2026-09-17T03:11:52.653Z",
-      "updatedAt": "2026-09-17T03:11:52.653Z"
+      "createdAt": "2026-09-17T03:12:00.054Z",
+      "updatedAt": "2026-09-17T03:12:00.054Z"
     }
   ],
   "user_sessions": [
@@ -1561,13 +1590,13 @@
       "sessionId": "sess_1789614343729_wm0mbl2",
       "userId": null,
       "startedAt": "2026-09-17T03:05:44.029Z",
-      "lastActiveAt": "2026-09-17T03:11:45.616Z",
+      "lastActiveAt": "2026-09-17T03:24:42.980Z",
       "endedAt": null,
-      "durationSeconds": 362,
+      "durationSeconds": 1139,
       "deviceType": "desktop",
       "browser": "Safari",
       "operatingSystem": "macOS",
-      "currentPage": "/match",
+      "currentPage": "/",
       "country": "Thailand",
       "region": "Bangkok",
       "language": "th-TH",
@@ -1578,9 +1607,9 @@
       "sessionId": "sess_1789569528418_33efue4",
       "userId": "usr-mem-1",
       "startedAt": "2026-09-16T14:54:29.388Z",
-      "lastActiveAt": "2026-09-17T03:11:41.591Z",
+      "lastActiveAt": "2026-09-17T03:24:41.578Z",
       "endedAt": null,
-      "durationSeconds": 44232,
+      "durationSeconds": 45012,
       "deviceType": "desktop",
       "browser": "Chrome",
       "operatingSystem": "Windows",
@@ -1595,7 +1624,7 @@
       "sessionId": "test-session-1",
       "userId": null,
       "startedAt": "2026-09-16T14:30:21.577Z",
-      "lastActiveAt": "2026-09-17T03:08:35.341Z",
+      "lastActiveAt": "2026-09-17T03:20:10.790Z",
       "endedAt": null,
       "durationSeconds": 0,
       "deviceType": "desktop",
@@ -1612,7 +1641,7 @@
       "userId": "usr-mem-1",
       "sessionId": "sess-live-1",
       "startedAt": "2026-09-16T14:24:52.715Z",
-      "lastActiveAt": "2026-09-17T03:08:05.341Z",
+      "lastActiveAt": "2026-09-17T03:19:40.790Z",
       "endedAt": null,
       "durationSeconds": 314,
       "deviceType": "mobile",
@@ -1629,7 +1658,7 @@
       "userId": "usr-mem-2",
       "sessionId": "sess-live-2",
       "startedAt": "2026-09-16T14:22:38.715Z",
-      "lastActiveAt": "2026-09-17T03:07:30.341Z",
+      "lastActiveAt": "2026-09-17T03:19:05.790Z",
       "endedAt": null,
       "durationSeconds": 448,
       "deviceType": "desktop",
@@ -1646,7 +1675,7 @@
       "userId": "usr-mem-4",
       "sessionId": "sess-live-3",
       "startedAt": "2026-09-16T14:20:21.715Z",
-      "lastActiveAt": "2026-09-17T03:06:40.341Z",
+      "lastActiveAt": "2026-09-17T03:18:15.790Z",
       "endedAt": null,
       "durationSeconds": 585,
       "deviceType": "desktop",
@@ -1745,6 +1774,106 @@
     }
   ],
   "analytics_events": [
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789615262988-b2wb",
+      "createdAt": "2026-09-17T03:21:02.988Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789615262987-4eff",
+      "createdAt": "2026-09-17T03:21:02.987Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614802119-7np4",
+      "createdAt": "2026-09-17T03:13:22.119Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614802111-pvnq",
+      "createdAt": "2026-09-17T03:13:22.111Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614755646-d1nf",
+      "createdAt": "2026-09-17T03:12:35.646Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614755645-8rsg",
+      "createdAt": "2026-09-17T03:12:35.645Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "get_recommendation",
+      "page": "/match",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {
+        "mood": "stressed",
+        "availableTime": 30,
+        "energyLevel": "low",
+        "count": 4
+      },
+      "id": "ev-1789614714611-i7of",
+      "createdAt": "2026-09-17T03:11:54.611Z"
+    },
     {
       "userId": null,
       "sessionId": "sess_1789614343729_wm0mbl2",
@@ -4681,6 +4810,36 @@
     }
   ],
   "admin_audit_logs": [
+    {
+      "adminId": "usr-admin-1",
+      "adminName": "Admin",
+      "action": "Delete Activity",
+      "targetType": "activity",
+      "targetId": "act-1789615447626",
+      "description": "ลบกิจกรรม: โยคะทดสอบ",
+      "id": "aud-1789615448977",
+      "timestamp": "2026-09-17T03:24:08.977Z"
+    },
+    {
+      "adminId": "usr-admin-1",
+      "adminName": "Admin",
+      "action": "Create Activity",
+      "targetType": "activity",
+      "targetId": "act-1789615447626",
+      "description": "สร้างกิจกรรมใหม่: โยคะทดสอบ",
+      "id": "aud-1789615447626",
+      "timestamp": "2026-09-17T03:24:07.626Z"
+    },
+    {
+      "adminId": "usr-admin-1",
+      "adminName": "Admin",
+      "action": "Create Member",
+      "targetType": "member",
+      "targetId": "usr-1789615246353-rq7q",
+      "description": "สร้างผู้ใช้งานใหม่: แอดมินสร้างให้ (admin_created@example.com) บทบาท member",
+      "id": "aud-1789615246353",
+      "timestamp": "2026-09-17T03:20:46.353Z"
+    },
     {
       "adminId": "usr-admin-1",
       "adminName": "Admin",

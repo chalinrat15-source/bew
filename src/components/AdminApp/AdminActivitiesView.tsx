@@ -95,12 +95,20 @@ export const AdminActivitiesView: React.FC = () => {
       })
       .filter((s) => s.title);
 
+    const finalTitleTh = titleTh.trim() || title.trim();
+    const finalTitle = title.trim() || finalTitleTh;
+
+    if (!finalTitleTh) {
+      alert('กรุณากรอกชื่อกิจกรรม');
+      return;
+    }
+
     const payload = {
-      title,
-      titleTh,
+      title: finalTitle,
+      titleTh: finalTitleTh,
       categoryId,
-      description,
-      durationMinutes: Number(durationMinutes),
+      description: description.trim() || finalTitleTh,
+      durationMinutes: Number(durationMinutes) || 15,
       energyLevel,
       equipment,
       steps,
@@ -278,10 +286,11 @@ export const AdminActivitiesView: React.FC = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 mb-1">ชื่อภาษาอังกฤษ</label>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1">
+                    ชื่อภาษาอังกฤษ <span className="text-slate-400 font-normal">(ถ้ามี)</span>
+                  </label>
                   <input
                     type="text"
-                    required
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     placeholder="e.g. Morning Yoga Flow"
