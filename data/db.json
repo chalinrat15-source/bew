@@ -1,0 +1,4787 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "email": "admin@activitymatch.com",
+      "passwordHash": "admin123",
+      "fullName": "Admin Chalinrat (ผู้ดูแลระบบ)",
+      "role": "admin",
+      "status": "active",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "interests": [
+        "Learning",
+        "Technology",
+        "Health & Fitness"
+      ],
+      "createdAt": "2026-06-18T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z",
+      "lastLoginAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "usr-mem-1",
+      "email": "somchai@example.com",
+      "passwordHash": "user123",
+      "fullName": "สมชาย ใจดี (Somchai)",
+      "role": "member",
+      "status": "active",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "interests": [
+        "Health & Fitness",
+        "Learning",
+        "Language Exchange"
+      ],
+      "createdAt": "2026-08-02T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:56:13.986Z",
+      "lastLoginAt": "2026-09-16T14:56:13.986Z"
+    },
+    {
+      "id": "usr-mem-2",
+      "email": "jane@example.com",
+      "passwordHash": "user123",
+      "fullName": "เจนจิรา มงคล (Jane)",
+      "role": "member",
+      "status": "active",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+      "interests": [
+        "Art & Creativity",
+        "Cooking & Baking",
+        "Music & Instruments"
+      ],
+      "createdAt": "2026-08-17T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z",
+      "lastLoginAt": "2026-09-16T14:05:06.714Z"
+    },
+    {
+      "id": "usr-mem-3",
+      "email": "sarah@example.com",
+      "passwordHash": "user123",
+      "fullName": "Sarah Wilson",
+      "role": "member",
+      "status": "active",
+      "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80",
+      "interests": [
+        "Nature & Gardening",
+        "Health & Fitness"
+      ],
+      "createdAt": "2026-09-04T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z",
+      "lastLoginAt": "2026-09-16T13:50:06.714Z"
+    },
+    {
+      "id": "usr-mem-4",
+      "email": "ananda@example.com",
+      "passwordHash": "user123",
+      "fullName": "อนันดา พัฒนกิจ (Ananda)",
+      "role": "member",
+      "status": "active",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+      "interests": [
+        "Technology & Coding",
+        "Entertainment"
+      ],
+      "createdAt": "2026-09-14T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z",
+      "lastLoginAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "email": "chalinrat15@gmail.com",
+      "passwordHash": "123",
+      "fullName": "456",
+      "role": "member",
+      "status": "active",
+      "interests": [
+        "Learning",
+        "Health & Fitness"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1534528742378?w=150&auto=format&fit=crop&q=80",
+      "id": "usr-1789570512860-eds8",
+      "createdAt": "2026-09-16T14:55:12.860Z",
+      "updatedAt": "2026-09-16T14:55:12.860Z"
+    },
+    {
+      "email": "atiwichh009@gmail.com",
+      "passwordHash": "123456789",
+      "fullName": "bew",
+      "role": "member",
+      "status": "active",
+      "interests": [
+        "Learning",
+        "Health & Fitness"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1534528742041?w=150&auto=format&fit=crop&q=80",
+      "id": "usr-1789570549835-t22n",
+      "createdAt": "2026-09-16T14:55:49.835Z",
+      "updatedAt": "2026-09-16T14:55:49.835Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-learning",
+      "name": "Learning",
+      "nameTh": "การเรียนรู้และพัฒนาตนเอง",
+      "icon": "BookOpen",
+      "color": "#3b82f6",
+      "description": "กิจกรรมเสริมทักษะ ภาษา และความรู้ใหม่ๆ"
+    },
+    {
+      "id": "cat-health",
+      "name": "Health & Fitness",
+      "nameTh": "สุขภาพและการออกกำลังกาย",
+      "icon": "HeartPulse",
+      "color": "#10b981",
+      "description": "ดูแลสุขภาพ ยืดเหยียด คาร์ดิโอ และโภชนาการ"
+    },
+    {
+      "id": "cat-entertainment",
+      "name": "Entertainment",
+      "nameTh": "ความบันเทิงและคลายเครียด",
+      "icon": "Sparkles",
+      "color": "#8b5cf6",
+      "description": "ภาพยนตร์ เกม ดนตรี และความเพลิดเพลิน"
+    },
+    {
+      "id": "cat-art",
+      "name": "Art & Creativity",
+      "nameTh": "ศิลปะและความคิดสร้างสรรค์",
+      "icon": "Palette",
+      "color": "#ec4899",
+      "description": "วาดภาพ ระบายสี งานฝีมือ และออกแบบ"
+    },
+    {
+      "id": "cat-music",
+      "name": "Music & Instruments",
+      "nameTh": "ดนตรีและเครื่องดนตรี",
+      "icon": "Music",
+      "color": "#f59e0b",
+      "description": "ฝึกเล่นเครื่องดนตรี ฟังเพลง แต่งเพลง"
+    },
+    {
+      "id": "cat-cooking",
+      "name": "Cooking & Baking",
+      "nameTh": "การทำอาหารและเบเกอรี่",
+      "icon": "UtensilsCrossed",
+      "color": "#ef4444",
+      "description": "เมนูเพื่อสุขภาพ ขนมหวาน และอาหารจานโปรด"
+    },
+    {
+      "id": "cat-nature",
+      "name": "Nature & Gardening",
+      "nameTh": "ธรรมชาติและการทำสวน",
+      "icon": "Leaf",
+      "color": "#14b8a6",
+      "description": "ปลูกต้นไม้ จัดสวน เดินธรรมชาติ สูดอากาศบริสุทธิ์"
+    },
+    {
+      "id": "cat-technology",
+      "name": "Technology & Coding",
+      "nameTh": "เทคโนโลยีและการเขียนโค้ด",
+      "icon": "Code",
+      "color": "#6366f1",
+      "description": "เขียนโปรแกรม สร้างเว็บไซต์ และเครื่องมือ AI"
+    },
+    {
+      "id": "cat-language",
+      "name": "Language Exchange",
+      "nameTh": "ฝึกภาษาต่างประเทศ",
+      "icon": "Languages",
+      "color": "#06b6d4",
+      "description": "ฝึกสนทนา คำศัพท์ ฟังสำเนียงสากล"
+    },
+    {
+      "id": "cat-hobbies",
+      "name": "Hobbies & Crafts",
+      "nameTh": "งานอดิเรกและของสะสม",
+      "icon": "Gamepad2",
+      "color": "#84cc16",
+      "description": "สะสมของ บอร์ดเกม และงานประดิษฐ์"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "title": "Reading Books (30 mins deep focus)",
+      "titleTh": "อ่านหนังสือพัฒนาตนเอง 30 นาที",
+      "categoryId": "cat-learning",
+      "description": "อ่านหนังสือแนวพัฒนาตนเองหรือจิตวิทยา เพื่อเปิดมุมมองใหม่และสร้างสมาธิอย่างลึกซึ้ง",
+      "durationMinutes": 30,
+      "energyLevel": "low",
+      "equipment": [
+        "หนังสือเล่มโปรด หรือ E-Reader",
+        "สมุดจดบันทึกประเด็นสำคัญ",
+        "แก้วน้ำอุ่น"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เตรียมพื้นที่เงียบสงบ",
+          "instruction": "ปิดการแจ้งเตือนมือถือ วางในระยะที่เอื้อมไม่ถึง",
+          "durationMinutes": 2
+        },
+        {
+          "step": 2,
+          "title": "อ่านอย่างมีสมาธิ",
+          "instruction": "อ่านเนื้อหาอย่างต่อเนื่อง สังเกตไอเดียหลัก",
+          "durationMinutes": 25
+        },
+        {
+          "step": 3,
+          "title": "สรุป 1 ข้อคิดสำคัญ",
+          "instruction": "เขียน 1 ประโยคที่ได้เรียนรู้และจะนำไปปรับใช้จริง",
+          "durationMinutes": 3
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-08-17T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-2",
+      "title": "Brisk Walking & Light Cardio",
+      "titleTh": "เดินเร็วออกกำลังกายเพื่อความสดชื่น",
+      "categoryId": "cat-health",
+      "description": "การเดินเร็ว 30 นาที ช่วยกระตุ้นการไหลเวียนโลหิต ลดความเครียด และเผาผลาญพลังงาน",
+      "durationMinutes": 30,
+      "energyLevel": "medium",
+      "equipment": [
+        "รองเท้ากีฬาคู่ใจ",
+        "หูฟังสำหรับฟังเพลงสบายๆ",
+        "ขวดน้ำดื่ม"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "วอร์มอัพเบาๆ",
+          "instruction": "หมุนข้อเท้า ยืดกล้ามเนื้อขาและแขน",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "เดินเร็วต่อเนื่อง",
+          "instruction": "ก้าวเท้ายาว แกว่งแขน รักษาจังหวะหายใจสม่ำเสมอ",
+          "durationMinutes": 20
+        },
+        {
+          "step": 3,
+          "title": "คูลดาวน์ยืดเหยียด",
+          "instruction": "เดินชะลอความเร็วและยืดกล้ามเนื้อน่อง",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-08-19T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-3",
+      "title": "Daily Language Practice",
+      "titleTh": "ฝึกภาษาต่างประเทศ (คำศัพท์และบทสนทนา)",
+      "categoryId": "cat-language",
+      "description": "ฝึกฝนภาษาอังกฤษหรือภาษาที่สาม 20 นาที ด้วยเทคนิค Shadowing และท่องคำศัพท์ใหม่",
+      "durationMinutes": 20,
+      "energyLevel": "medium",
+      "equipment": [
+        "แอปหรือสมุดจดศัพท์",
+        "หูฟังเพื่อฟังสำเนียงเจ้าของภาษา"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ทบทวนคำศัพท์ 10 คำ",
+          "instruction": "อ่านออกเสียงพร้อมแต่งประโยคสั้นๆ",
+          "durationMinutes": 8
+        },
+        {
+          "step": 2,
+          "title": "ฟังบทสนทนาสั้นและพูดตาม",
+          "instruction": "ฝึก Shadowing จับสำเนียงและจังหวะ",
+          "durationMinutes": 10
+        },
+        {
+          "step": 3,
+          "title": "ทดสอบตนเองแบบ Flashcard",
+          "instruction": "ปิดความหมายแล้วแปลคำศัพท์เร็วๆ",
+          "durationMinutes": 2
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-08-22T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-4",
+      "title": "Mindfulness Breathing Meditation",
+      "titleTh": "ฝึกสมาธิ กำหนดลมหายใจผ่อนคลาย",
+      "categoryId": "cat-health",
+      "description": "ลดคลื่นความกังวลและรีเซ็ตสมองด้วยเทคนิค 4-7-8 และการตามดูลมหายใจปัจจุบัน",
+      "durationMinutes": 15,
+      "energyLevel": "low",
+      "equipment": [
+        "เบาะนั่งหรือเก้าอี้สบายๆ",
+        "นาฬิกาจับเวลา"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "จัดท่านั่งและผ่อนคลายกล้ามเนื้อ",
+          "instruction": "หลังตรง ไหล่ผ่อนคลาย หลับตาเบาๆ",
+          "durationMinutes": 2
+        },
+        {
+          "step": 2,
+          "title": "หายใจแบบ 4-7-8",
+          "instruction": "เข้า 4 วิ กลั้น 7 วิ ผ่อนออก 8 วิ ทำซ้ำ 4 รอบ",
+          "durationMinutes": 5
+        },
+        {
+          "step": 3,
+          "title": "ดูลมหายใจธรรมชาติ",
+          "instruction": "รับรู้ความรู้สึกเย็นและอุ่นบริเวณปลายจมูก",
+          "durationMinutes": 8
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-08-27T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-5",
+      "title": "Healthy Meal Prep (Clean & Fresh)",
+      "titleTh": "ทำอาหารคลีนเพื่อสุขภาพ 1 มื้อ",
+      "categoryId": "cat-cooking",
+      "description": "ปรุงอาหารที่อุดมด้วยโปรตีนและผักหลากสีสัน ทำง่ายและดีต่อลำไส้",
+      "durationMinutes": 40,
+      "energyLevel": "medium",
+      "equipment": [
+        "วัตถุดิบสด เช่น อกไก่ ผักสลัด ไข่ต้ม",
+        "กระทะและเครื่องปรุงโซเดียมต่ำ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ล้างและหั่นวัตถุดิบ",
+          "instruction": "เตรียมผักและเนื้อสัตว์ให้พร้อมปรุง",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "ปรุงด้วยไฟกลาง",
+          "instruction": "ย่างอกไก่หรือผัดผักด้วยน้ำมันมะกอกเล็กน้อย",
+          "durationMinutes": 20
+        },
+        {
+          "step": 3,
+          "title": "จัดจานสวยงามและทานอย่างมีสติ",
+          "instruction": "เพลิดเพลินกับรสธรรมชาติของอาหาร",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-08-29T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-6",
+      "title": "Digital Drawing & Sketching",
+      "titleTh": "วาดภาพดิจิทัลและสเก็ตช์ไอเดีย",
+      "categoryId": "cat-art",
+      "description": "ปลดปล่อยจินตนาการผ่านเส้นสาย วาดภาพทิวทัศน์หรือตัวการ์ตูนที่ชื่นชอบ",
+      "durationMinutes": 45,
+      "energyLevel": "low",
+      "equipment": [
+        "แท็บเล็ต/ไอแพด หรือกระดาษสเก็ตช์",
+        "ปากกา Stylus หรือดินสอวาดภาพ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "หา Ref แรงบันดาลใจ",
+          "instruction": "ค้นหาภาพอ้างอิงและกำหนดพาเลทสี",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ร่างโครงร่างภาพ (Rough Sketch)",
+          "instruction": "วาดสัดส่วนและรูปทรงเรขาคณิตเบื้องต้น",
+          "durationMinutes": 15
+        },
+        {
+          "step": 3,
+          "title": "ลงลายเส้นจริงและแต่งแต้มแสงเงา",
+          "instruction": "เพิ่มรายละเอียดและความลึกของภาพ",
+          "durationMinutes": 25
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-01T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-7",
+      "title": "Acoustic Guitar Rhythm Practice",
+      "titleTh": "ฝึกเล่นกีตาร์โปร่งและจังหวะคอร์ด",
+      "categoryId": "cat-music",
+      "description": "ฝึกนิ้วมือเปลี่ยนคอร์ดพื้นฐาน G, Em, C, D ให้ลื่นไหล พร้อมตีคอร์ดเป็นเพลง",
+      "durationMinutes": 30,
+      "energyLevel": "medium",
+      "equipment": [
+        "กีตาร์โปร่ง",
+        "ปิ๊กกีตาร์",
+        "แอปจูนเนอร์ตั้งสาย"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ตั้งสายและวอร์มนิ้ว",
+          "instruction": "ฝึกกด Spider exercise 4 ช่อง",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ฝึกเปลี่ยนคอร์ดในจังหวะสม่ำเสมอ",
+          "instruction": "ซ้อมตามจังหวะ Metronome 60-70 BPM",
+          "durationMinutes": 15
+        },
+        {
+          "step": 3,
+          "title": "เล่นเพลงโปรดท่อนฮุก 1 เพลง",
+          "instruction": "ร้องคลอเบาๆ ไปกับเสียงกีตาร์",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-02T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-8",
+      "title": "Coding Challenge & Algorithm Drill",
+      "titleTh": "เขียนโค้ดแก้โจทย์อัลกอริทึม",
+      "categoryId": "cat-technology",
+      "description": "ลับคมทักษะการคิดเชิงตรรกะด้วยการเขียนโค้ดแก้ปัญหา 1 ข้อ",
+      "durationMinutes": 45,
+      "energyLevel": "high",
+      "equipment": [
+        "คอมพิวเตอร์",
+        "Code Editor หรือแพลตฟอร์มเขียนโค้ด"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ทำความเข้าใจ Problem Statement",
+          "instruction": "อ่านเงื่อนไข Input/Output และ Edge Cases",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "ร่าง Pseudocode บนกระดาษ",
+          "instruction": "วางแผนโครงสร้างข้อมูลและ Flow ทำงาน",
+          "durationMinutes": 10
+        },
+        {
+          "step": 3,
+          "title": "เขียนโค้ดและรัน Unit Tests",
+          "instruction": "Optimize ความเร็วและเช็คความถูกต้อง",
+          "durationMinutes": 25
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-04T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-9",
+      "title": "Urban Balcony Gardening",
+      "titleTh": "ดูแลต้นไม้และจัดสวนระเบียงคอนโด",
+      "categoryId": "cat-nature",
+      "description": "ตัดแต่งใบ รดน้ำ ใส่ปุ๋ยอินทรีย์ เชื่อมต่อกับธรรมชาติเพื่อความผ่อนคลาย",
+      "durationMinutes": 25,
+      "energyLevel": "low",
+      "equipment": [
+        "บัวรดน้ำ",
+        "กรรไกรตัดแต่งกิ่ง",
+        "ปุ๋ยเม็ด"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ตรวจสุขภาพใบและดิน",
+          "instruction": "สังเกตความชื้นในดินและแมลงศัตรูพืช",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ตัดแต่งใบเหลืองและพรวนดิน",
+          "instruction": "เติมปุ๋ยบำรุงต้นไม้ตามความเหมาะสม",
+          "durationMinutes": 12
+        },
+        {
+          "step": 3,
+          "title": "รดน้ำให้ชุ่มฉ่ำ",
+          "instruction": "เช็ดละอองน้ำบนใบไม้และจัดมุมวางรับแดด",
+          "durationMinutes": 8
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-06T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-10",
+      "title": "Strategic Board Game Session",
+      "titleTh": "เล่นบอร์ดเกมแนวกลยุทธ์ลับสมอง",
+      "categoryId": "cat-hobbies",
+      "description": "เล่นบอร์ดเกมหรือหมากรุก ช่วยฝึกการวางแผนคาดการณ์และแก้ปัญหา",
+      "durationMinutes": 60,
+      "energyLevel": "high",
+      "equipment": [
+        "บอร์ดเกม หรือกระดานหมากรุก/ออนไลน์"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "อ่านกฎและเซ็ตอัปกระดาน",
+          "instruction": "จัดเรียงตัวเล่นและการ์ด",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "เล่นเกมอย่างตั้งใจ",
+          "instruction": "วางกลยุทธ์และปรับตัวตามสถานการณ์",
+          "durationMinutes": 40
+        },
+        {
+          "step": 3,
+          "title": "ทบทวนผลการเล่น",
+          "instruction": "วิเคราะห์จุดที่ตัดสินใจดีและจุดที่พัฒนาได้",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-08T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-11",
+      "title": "Informative Podcast Listening",
+      "titleTh": "ฟังพอดแคสต์สาระน่ารู้และไอเดีย",
+      "categoryId": "cat-entertainment",
+      "description": "ฟังเรื่องราวประวัติศาสตร์ วิทยาศาสตร์ หรือธุรกิจ พร้อมพักสายตา",
+      "durationMinutes": 30,
+      "energyLevel": "low",
+      "equipment": [
+        "หูฟังคุณภาพดี",
+        "แอปพอดแคสต์"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เลือกหัวข้อที่สนใจวันนี้",
+          "instruction": "เลือกตอนความยาว 20-30 นาที",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "นอนหรือนั่งพักผ่อนรับฟัง",
+          "instruction": "หลับตาและจินตนาการตามเรื่องเล่า",
+          "durationMinutes": 25
+        },
+        {
+          "step": 3,
+          "title": "แชร์ตอนดีๆ ให้เพื่อน",
+          "instruction": "กดบันทึกไว้ฟังซ้ำหรือส่งต่อ",
+          "durationMinutes": 2
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-10T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-12",
+      "title": "Hatha Yoga & Full Body Stretch",
+      "titleTh": "โยคะฮฐะ ยืดเหยียดคลายกล้ามเนื้อ",
+      "categoryId": "cat-health",
+      "description": "แก้อาการออฟฟิศซินโดรม ยืดกล้ามเนื้อคอ บ่า ไหล่ และสะโพกอย่างปลอดภัย",
+      "durationMinutes": 35,
+      "energyLevel": "medium",
+      "equipment": [
+        "เสื่อโยคะ",
+        "เสื้อผ้าที่เคลื่อนไหวสะดวก"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ไหว้พระอาทิตย์ (Surya Namaskar)",
+          "instruction": "เคลื่อนไหวตามลมหายใจ 3 รอบ",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "ท่าเปิดอกและสะโพก (Warrior & Pigeon)",
+          "instruction": "ค้างท่าละ 5 ลมหายใจลึกๆ",
+          "durationMinutes": 15
+        },
+        {
+          "step": 3,
+          "title": "ท่านอนผ่อนคลาย (Savasana)",
+          "instruction": "พักร่างกายให้สมองและกล้ามเนื้อคลายตัวเต็มที่",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-12T14:30:06.714Z",
+      "updatedAt": "2026-09-16T14:30:06.714Z"
+    },
+    {
+      "id": "act-13",
+      "title": "Daily Journaling & Gratitude Practice",
+      "titleTh": "เขียนบันทึกความรู้สึกและขอบคุณประจำวัน",
+      "categoryId": "cat-learning",
+      "description": "จดบันทึก 3 สิ่งที่รู้สึกขอบคุณในวันนี้ พร้อมสะท้อนความรู้สึกเพื่อฝึกจิตใจให้แจ่มใสและมีสติ",
+      "durationMinutes": 15,
+      "energyLevel": "low",
+      "equipment": [
+        "สมุดไดอารี่หรือแอปบันทึก",
+        "ปากกาหมึกซึมคู่ใจ",
+        "เครื่องดื่มอุ่นๆ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "สงบนิ่งและนึกถึงเหตุการณ์ในวัน",
+          "instruction": "ทบทวนเหตุการณ์ดีๆ ที่เกิดขึ้นตั้งแต่เช้า",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "เขียน 3 สิ่งที่รู้สึกขอบคุณ",
+          "instruction": "ระบุรายละเอียดเล็กๆ ที่ทำให้ยิ้มได้",
+          "durationMinutes": 7
+        },
+        {
+          "step": 3,
+          "title": "ตั้งเป้าหมาย 1 อย่างสำหรับวันพรุ่งนี้",
+          "instruction": "เขียนเจตจำนงเชิงบวกสั้นๆ 1 ประโยค",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-14T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-14",
+      "title": "Core Workout & Plank Challenge",
+      "titleTh": "ออกกำลังกายแกนกลางลำตัวและแพลงก์",
+      "categoryId": "cat-health",
+      "description": "ฝึกความแข็งแรงของกล้ามเนื้อหน้าท้องและหลังส่วนล่าง เสริมบุคลิกภาพที่ดีและลดอาการปวดหลัง",
+      "durationMinutes": 20,
+      "energyLevel": "high",
+      "equipment": [
+        "เสื่อออกกำลังกาย",
+        "นาฬิกาจับเวลา",
+        "น้ำดื่มสะอาด"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "วอร์มอัพข้อต่อและยืดเส้น",
+          "instruction": "หมุนหัวไหล่ ขยับสะโพก และทำ Cat-Cow 2 นาที",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "ฝึกเซ็ตแพลงก์และครันช์",
+          "instruction": "แพลงก์ 45 วินาที x 3 เซ็ต สลับกับ Bird-Dog และ Side Plank",
+          "durationMinutes": 14
+        },
+        {
+          "step": 3,
+          "title": "คูลดาวน์ยืดหลัง",
+          "instruction": "ยืดเหยียดท่า Child’s Pose และ Cobra Pose หายใจลึกๆ",
+          "durationMinutes": 3
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-14T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-15",
+      "title": "Artisan Pour-Over Drip Coffee",
+      "titleTh": "ดริปกาแฟสดสไตล์ Slow Bar รื่นรมย์",
+      "categoryId": "cat-cooking",
+      "description": "สัมผัสศิลปะการชงกาแฟดริป ค่อยๆ ควบคุมสายน้ำ ดมกลิ่นหอมของเมล็ดกาแฟคั่วบด สดชื่นตื่นตัว",
+      "durationMinutes": 20,
+      "energyLevel": "low",
+      "equipment": [
+        "เมล็ดกาแฟ Specialty",
+        "เครื่องบดมือ",
+        "ดริปเปอร์และกระดาษกรอง",
+        "กาน้ำดริปคอห่าน"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "บดเมล็ดกาแฟและพับกระดาษกรอง",
+          "instruction": "บดกาแฟขนาดปานกลาง รินน้ำร้อนล้างกระดาษกรองทิ้งก่อน",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ดริปกาแฟอย่างประณีต",
+          "instruction": "บลูมมิ่งกาแฟ 30 วินาที ค่อยๆ เทน้ำวนเป็นก้นหอย 3 รอบ",
+          "durationMinutes": 10
+        },
+        {
+          "step": 3,
+          "title": "จิบและชิมรสสัมผัส",
+          "instruction": "รับรู้รสสัมผัส Floral, Fruity และความหวานธรรมชาติของกาแฟ",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-15T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-16",
+      "title": "Keyboard Melodies & Chords Practice",
+      "titleTh": "ฝึกเล่นเปียโน/คีย์บอร์ดเพลงบรรเลง",
+      "categoryId": "cat-music",
+      "description": "ฝึกไล่นิ้วมือตามสเกล และเล่นท่อนคอร์ดเพลงโปรด ช่วยพัฒนาสมองซีกซ้ายและขวาพร้อมกัน",
+      "durationMinutes": 35,
+      "energyLevel": "medium",
+      "equipment": [
+        "คีย์บอร์ดไฟฟ้า หรือเปียโน",
+        "โน้ตเพลงระดับเริ่มต้น",
+        "หูฟังเพื่อสมาธิ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "วอร์มนิ้วสเกล C Major",
+          "instruction": "เล่นมือขวาและซ้ายแยกกันเพื่อความคล่องตัว",
+          "durationMinutes": 8
+        },
+        {
+          "step": 2,
+          "title": "ซ้อมท่อนคอร์ดและเมโลดี้",
+          "instruction": "ฝึกจับจังหวะช้าๆ ตามเมโทรนอม",
+          "durationMinutes": 20
+        },
+        {
+          "step": 3,
+          "title": "บรรเลงทั้งเพลงแบบต่อเนื่อง",
+          "instruction": "เล่นเพลงตั้งแต่ต้นจนจบอย่างผ่อนคลาย",
+          "durationMinutes": 7
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-15T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-17",
+      "title": "Minimalist Desk Declutter & Reset",
+      "titleTh": "จัดโต๊ะทำงานสไตล์มินิมอลเคลียร์สมอง",
+      "categoryId": "cat-hobbies",
+      "description": "จัดระเบียบพื้นที่โต๊ะทำงาน เก็บสายไฟ เช็ดฝุ่น เพิ่มพื้นที่ว่าง ช่วยลดความเครียดทางสายตา",
+      "durationMinutes": 25,
+      "energyLevel": "medium",
+      "equipment": [
+        "ผ้าไมโครไฟเบอร์",
+        "ที่รัดสายไฟ",
+        "กล่องเก็บของกระจุกกระจิก"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เคลียร์สิ่งของออกจากโต๊ะทั้งหมด",
+          "instruction": "แยกสิ่งจำเป็นกับสิ่งที่ไม่ค่อยได้ใช้",
+          "durationMinutes": 6
+        },
+        {
+          "step": 2,
+          "title": "เช็ดทำความสะอาดพื้นผิวโต๊ะและหน้าจอ",
+          "instruction": "ทำความสะอาดคีย์บอร์ด เมาส์ และแผ่นรองเมาส์",
+          "durationMinutes": 10
+        },
+        {
+          "step": 3,
+          "title": "จัดวางเฉพาะสิ่งของที่ใช้บ่อย",
+          "instruction": "วางโคมไฟ ต้นไม้จิ๋ว และสมุดจดอย่างสวยงามลงตัว",
+          "durationMinutes": 9
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-15T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-18",
+      "title": "AI Exploration & Smart Prompting",
+      "titleTh": "ทดลองสร้างไอเดียด้วย AI Prompting",
+      "categoryId": "cat-technology",
+      "description": "เรียนรู้การป้อนคำสั่ง Prompt เพื่อให้ AI ช่วยสรุปเนื้อหา เขียนโครงร่างบทความ หรือแต่งกลอน",
+      "durationMinutes": 30,
+      "energyLevel": "medium",
+      "equipment": [
+        "คอมพิวเตอร์หรือแท็บเล็ต",
+        "การเชื่อมต่ออินเทอร์เน็ต"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "กำหนดโจทย์ที่ต้องการสร้าง",
+          "instruction": "เลือกหัวข้อ เช่น วางแผนท่องเที่ยว หรือคิดไอเดียเมนูอาหาร",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ทดลองเขียน Prompt แบบระบุบริบทชัดเจน",
+          "instruction": "ใส่ Role, Task, Format และข้อจำกัดเพื่อดูผลลัพธ์ที่ดีที่สุด",
+          "durationMinutes": 18
+        },
+        {
+          "step": 3,
+          "title": "บันทึกสูตร Prompt เด็ดๆ เก็บไว้",
+          "instruction": "รวบรวม Template คำสั่งที่ใช้งานได้ผลดี",
+          "durationMinutes": 7
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-15T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-19",
+      "title": "Scenic Evening Cycling Route",
+      "titleTh": "ปั่นจักรยานรับลมชมวิวช่วงเย็น",
+      "categoryId": "cat-health",
+      "description": "รับลมยามเย็น สูดอากาศสบายๆ เสริมความฟิตของหัวใจและกล้ามเนื้อขาในเส้นทางสวนสาธารณะ",
+      "durationMinutes": 45,
+      "energyLevel": "high",
+      "equipment": [
+        "จักรยาน",
+        "หมวกนิรภัยสำหรับปั่น",
+        "ไฟส่องสว่างหน้า-หลัง",
+        "ขวดน้ำ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ตรวจเช็คลมยางและเบรก",
+          "instruction": "ตรวจความดันลมยางและเช็คเบรกทั้งสองข้างเพื่อความปลอดภัย",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ปั่นจักรยานตามเส้นทางสวน",
+          "instruction": "รักษาความเร็วปานกลาง ชมนกชมไม้และพระอาทิตย์ตก",
+          "durationMinutes": 35
+        },
+        {
+          "step": 3,
+          "title": "ยืดเหยียดขาก่อนกลับบ้าน",
+          "instruction": "ยืดกล้ามเนื้อต้นขาด้านหน้าและน่องเพื่อคลายความเมื่อย",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-20",
+      "title": "Watercolor Landscape Painting",
+      "titleTh": "วาดภาพสีน้ำวิวทิวทัศน์สบายตา",
+      "categoryId": "cat-art",
+      "description": "ใช้เทคนิคเปียกบนเปียก (Wet-on-wet) ระบายท้องฟ้าและทุ่งหญ้า ปลดปล่อยอารมณ์ไปกับน้ำและเม็ดสี",
+      "durationMinutes": 45,
+      "energyLevel": "low",
+      "equipment": [
+        "กระดาษสีน้ำ 300 แกรม",
+        "ชุดสีน้ำ 12 สี",
+        "พู่กันกลมเบอร์ 6 และ 10",
+        "แก้วน้ำ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ลงน้ำบนกระดาษและระบายท้องฟ้า",
+          "instruction": "แตะสีฟ้าและม่วงอ่อนปล่อยให้กระจายตัวตามน้ำ",
+          "durationMinutes": 12
+        },
+        {
+          "step": 2,
+          "title": "แต่งแต้มทิวเขาและต้นไม้",
+          "instruction": "ใช้สีเขียวขี้ม้าและน้ำตาลแตะรูปทรงต้นไม้ระยะไกล",
+          "durationMinutes": 23
+        },
+        {
+          "step": 3,
+          "title": "เติมรายละเอียดใบไม้ด้านหน้า",
+          "instruction": "ใช้ปลายพู่กันสะบัดหญ้าและลงชื่อผลงานชิ้นเอก",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-21",
+      "title": "Spaced Repetition Memory Drill",
+      "titleTh": "ฝึกจำศัพท์ด้วยเทคนิค Spaced Repetition",
+      "categoryId": "cat-language",
+      "description": "ทบทวนคำศัพท์ภาษาอังกฤษหรือภาษาญี่ปุ่นด้วยการเว้นระยะความจำ ป้องกันการลืมอย่างเป็นวิทยาศาสตร์",
+      "durationMinutes": 20,
+      "energyLevel": "low",
+      "equipment": [
+        "แอป Flashcard เช่น Anki หรือกระดาษจดการ์ด",
+        "ปากกาเน้นข้อความ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เปิดการ์ดทบทวนคำศัพท์ชุดประจำวัน",
+          "instruction": "ดูคำศัพท์และนึกความหมายก่อนคลิกเฉลย",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "แต่งประโยคใหม่กับคำที่ตอบผิด",
+          "instruction": "เขียนประโยคสั้นๆ เพื่อให้จำบริบทได้แม่นยำ",
+          "durationMinutes": 7
+        },
+        {
+          "step": 3,
+          "title": "บันทึกสถิติความจำวันนี้",
+          "instruction": "ชื่นชมตนเองที่รักษาวินัยการท่องศัพท์ต่อเนื่อง",
+          "durationMinutes": 3
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-22",
+      "title": "Microgreens & Sprout Growing",
+      "titleTh": "เพาะต้นอ่อนทานตะวันและผักไมโครกรีน",
+      "categoryId": "cat-nature",
+      "description": "ปลูกผักต้นอ่อนทานตะวันหรือโต้วเหมี่ยว เก็บเกี่ยวได้ใน 7 วัน ได้ทั้งความเพลิดเพลินและอาหารปลอดสารพิษ",
+      "durationMinutes": 25,
+      "energyLevel": "low",
+      "equipment": [
+        "เมล็ดทานตะวันสำหรับเพาะ",
+        "ถาดเพาะและขุยมะพร้าว/ดิน",
+        "กระบอกฉีดน้ำ Foggy"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "แช่เมล็ดในน้ำอุ่น",
+          "instruction": "แช่เมล็ดไว้ 6-8 ชม. หรือตรวจสอบความพร้อมของเมล็ด",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "โรยเมล็ดลงบนดินเพาะ",
+          "instruction": "เกลี่ยเมล็ดให้กระจายทั่วถาด ไม่ทับซ้อนกันหนาเกินไป",
+          "durationMinutes": 12
+        },
+        {
+          "step": 3,
+          "title": "พรมน้ำชุ่มฉ่ำและคลุมผ้าดำ",
+          "instruction": "ฉีดน้ำให้ทั่ว ปิดถาดไว้ 2 วันแรกเพื่อให้รากงอกแข็งแรง",
+          "durationMinutes": 8
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-23",
+      "title": "Chewy Chocolate Chip Cookies",
+      "titleTh": "อบคุกกี้ช็อกโกแลตชิปโฮมเมดหอมเนย",
+      "categoryId": "cat-cooking",
+      "description": "ทำคุกกี้ช็อกโกแลตชิปเนื้อหนึบหอมกลิ่นเนยสดแท้ ทำง่าย อบด้วยหม้อทอดไร้น้ำมันหรือเตาอบ",
+      "durationMinutes": 50,
+      "energyLevel": "medium",
+      "equipment": [
+        "แป้งสาลี เนยสด น้ำตาลทรายแดง ไข่ไก่ ช็อกโกแลตชิป",
+        "ชามผสมและพายยาง",
+        "หม้อทอดไร้น้ำมันหรือเตาอบ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ตีเนยกับน้ำตาลและผสมแป้ง",
+          "instruction": "คนเนยอุณหภูมิห้องกับน้ำตาลจนเนียน ใส่แป้งและช็อกโกแลตชิป",
+          "durationMinutes": 15
+        },
+        {
+          "step": 2,
+          "title": "ปั้นเป็นก้อนกลมและแช่พักโด",
+          "instruction": "ตักแป้งคุกกี้เรียงบนกระดาษไข แช่เย็น 15 นาทีให้ทรงตัว",
+          "durationMinutes": 15
+        },
+        {
+          "step": 3,
+          "title": "อบด้วยความร้อน 165°C",
+          "instruction": "อบนาน 12-15 นาทีจนขอบเป็นสีทอง หอมกรุ่นทั่วบ้าน",
+          "durationMinutes": 20
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-24",
+      "title": "Zone 2 Fat Burn Running Session",
+      "titleTh": "วิ่งจ็อกกิ้ง Zone 2 เผาผลาญไขมัน",
+      "categoryId": "cat-health",
+      "description": "วิ่งเหยาะๆ ช้าๆ ในระดับชีพจรที่ยังพูดคุยเป็นประโยคได้สบาย ช่วยเสริมสร้างหลอดเลือดหัวใจและเบิร์นไขมัน",
+      "durationMinutes": 40,
+      "energyLevel": "high",
+      "equipment": [
+        "รองเท้าวิ่งที่รองรับแรงกระแทก",
+        "สมาร์ตวอทช์วัดอัตราการเต้นหัวใจ",
+        "เสื้อผ้าโปร่งสบาย"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "วอร์มอัพและจ็อกกิ้งเบาๆ",
+          "instruction": "ก้าวเท้าสั้นๆ ยกเข่าต่ำ หายใจเข้า-ออกทางจมูกเป็นหลัก",
+          "durationMinutes": 8
+        },
+        {
+          "step": 2,
+          "title": "รักษาระดับความเร็ว Zone 2 สม่ำเสมอ",
+          "instruction": "ควบคุมอัตราการเต้นหัวใจไม่ให้เหนื่อยหอบเกินไป 25 นาที",
+          "durationMinutes": 25
+        },
+        {
+          "step": 3,
+          "title": "เดินคลายกรดแลคติกและยืดกล้ามเนื้อ",
+          "instruction": "เดินชะลอ 4 นาทีแล้วยืดเอ็นร้อยหวายและสะโพก",
+          "durationMinutes": 7
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-25",
+      "title": "Urban Street Photography Walk",
+      "titleTh": "เดินถ่ายภาพสตรีทจับแสงและเงา",
+      "categoryId": "cat-art",
+      "description": "ออกไปสำรวจซอยหรือตลาดใกล้บ้าน ถ่ายภาพวิถีชีวิตผู้คน สถาปัตยกรรม แสงสะท้อน และมุมมองแปลกใหม่",
+      "durationMinutes": 45,
+      "energyLevel": "medium",
+      "equipment": [
+        "สมาร์ตโฟนหรือกล้องขนาดกะทัดรัด",
+        "รองเท้าผ้าใบเดินสบาย"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "สังเกตทิศทางของแสงแดดธรรมชาติ",
+          "instruction": "มองหาแสงเฉียง แสงตกกระทบ และเงาที่สร้างมิติ",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "กดชัตเตอร์จังหวะ Candid Moment",
+          "instruction": "จับภาพอารมณ์ รอยยิ้ม หรือรูปทรงเรขาคณิตของตึกรามบ้านช่อง",
+          "durationMinutes": 25
+        },
+        {
+          "step": 3,
+          "title": "คัดเลือก 3 ภาพที่ดีที่สุดและปรับโทนสี",
+          "instruction": "ครอปภาพและแต่งแสงเล็กน้อยเพื่อเล่าเรื่องราว",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-26",
+      "title": "Deep Ocean Documentary Stream",
+      "titleTh": "ดูสารคดีสัตว์โลกใต้ทะเลลึก 4K",
+      "categoryId": "cat-entertainment",
+      "description": "พักผ่อนสายตาและเปิดโลกกว้างกับภาพสิ่งมีชีวิตใต้ทะเลลึกที่งดงาม เสียงบรรยายอันเงียบสงบชวนผ่อนคลาย",
+      "durationMinutes": 45,
+      "energyLevel": "low",
+      "equipment": [
+        "จอโทรทัศน์หรือแท็บเล็ตความละเอียดสูง",
+        "เครื่องเสียงหรือหูฟัง",
+        "หมอนนุ่มๆ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ปรับแสงไฟห้องให้สลัวสบายตา",
+          "instruction": "ปิดไฟดวงหลัก เปิดโคมไฟสีส้ม Warm Light สบายตา",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "ชมสารคดีสัตว์น้ำและการเรืองแสงใต้ทะเล",
+          "instruction": "สังเกตความมหัศจรรย์ของธรรมชาติและสัตว์น้ำหายาก",
+          "durationMinutes": 38
+        },
+        {
+          "step": 3,
+          "title": "ยืดเหยียดตัวและดื่มน้ำเปล่า",
+          "instruction": "ผ่อนคลายกล้ามเนื้อคอ บ่า พร้อมเตรียมตัวเข้านอน",
+          "durationMinutes": 4
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-16T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-27",
+      "title": "Interactive Frontend Mini-Widget",
+      "titleTh": "เขียนมินิโปรเจกต์โค้ดดิ้ง React Interactive",
+      "categoryId": "cat-technology",
+      "description": "ฝึกฝนเขียนคอมโพเนนต์ React สวยๆ เช่น เครื่องมือนับถอยหลัง ตัวคำนวณ หรือเกมตอบคำถามสั้นๆ",
+      "durationMinutes": 55,
+      "energyLevel": "high",
+      "equipment": [
+        "คอมพิวเตอร์พร้อมเครื่องมือเขียนโค้ด",
+        "สมุดโน้ตร่าง UI"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ออกแบบ State และ Layout บนกระดาษ",
+          "instruction": "กำหนด Props, Event Handlers และ UI Wireframe",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "เขียน JSX และตกแต่งด้วย Tailwind CSS",
+          "instruction": "ประกอบชิ้นส่วนคอมโพเนนต์และเชื่อมโยง State ให้ทำงาน",
+          "durationMinutes": 35
+        },
+        {
+          "step": 3,
+          "title": "ทดสอบ Interaction และ Clean Code",
+          "instruction": "ทดสอบกดคลิกทุกปุ่ม ตรวจสอบความถูกต้องและจัด Format",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:08:48.277Z",
+      "updatedAt": "2026-09-17T03:08:48.277Z"
+    },
+    {
+      "id": "act-28",
+      "title": "Mindful Herbal Tea Tasting & Scent Meditation",
+      "titleTh": "จิบชาสมุนไพรและฝึกสติรับรู้กลิ่นอโรมา",
+      "categoryId": "cat-entertainment",
+      "description": "ชงชาคาโมมายล์หรือเปปเปอร์มินต์อุ่นๆ สัมผัสไออุ่น กลิ่นหอม ละเลียดรสชาติ ช่วยผ่อนคลายกล้ามเนื้อและความตึงเครียด",
+      "durationMinutes": 15,
+      "energyLevel": "low",
+      "equipment": [
+        "ใบชาหรือชาซองสมุนไพร",
+        "กาน้ำร้อนและแก้วเซรามิก",
+        "ช้อนคน"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ต้มน้ำและรินน้ำร้อนใส่แก้ว",
+          "instruction": "ใช้น้ำร้อนอุณหภูมิประมาณ 85-90°C แช่ชา 3-5 นาที",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "หลับตาและดมกลิ่นอายสมุนไพร",
+          "instruction": "สูดหายใจลึกๆ รับรู้กลิ่นหอมธรรมชาติ คลายความกังวล",
+          "durationMinutes": 5
+        },
+        {
+          "step": 3,
+          "title": "ค่อยๆ จิบชาทีละอึกอย่างมีสติ",
+          "instruction": "สังเกตอุณหภูมิและรสหวานธรรมชาติที่ปลายลิ้น",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-29",
+      "title": "Jump Rope Cardio Interval Burn",
+      "titleTh": "กระโดดเชือกคาร์ดิโอเผาผลาญพลังงานแบบ HIIT",
+      "categoryId": "cat-health",
+      "description": "เบิร์นไขมันเร่งด่วน เพิ่มความทนทานของกล้ามเนื้อน่องและหัวใจด้วยเซ็ตกระโดดเชือกสลับพัก",
+      "durationMinutes": 20,
+      "energyLevel": "high",
+      "equipment": [
+        "เชือกกระโดดปรับระดับได้",
+        "รองเท้ากีฬาซับแรงกระแทก",
+        "ผ้ารองหรือเสื่อ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "วอร์มอัพข้อเท้าและข้อมือ",
+          "instruction": "หมุนข้อเท้าและยืดเอ็นร้อยหวายป้องกันการบาดเจ็บ",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "กระโดดเชือกสไตล์ Tabata",
+          "instruction": "กระโดดเร็ว 45 วินาที สลับพัก 15 วินาที จำนวน 8-10 รอบ",
+          "durationMinutes": 14
+        },
+        {
+          "step": 3,
+          "title": "คูลดาวน์และคลายกล้ามเนื้อน่อง",
+          "instruction": "ยืดเหยียดกล้ามเนื้อน่องและขาด้านหลัง หายใจลึกๆ",
+          "durationMinutes": 3
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-30",
+      "title": "DIY Terrarium Miniature Ecosystem",
+      "titleTh": "จัดสวนขวดแก้วระบบปิด Mini Terrarium",
+      "categoryId": "cat-nature",
+      "description": "สร้างระบบนิเวศจำลองขนาดจิ๋วในโหลแก้วด้วยมอส หินภูเขาไฟ และต้นไม้ไซส์เล็ก เพลิดเพลินกับธรรมชาติในบ้าน",
+      "durationMinutes": 40,
+      "energyLevel": "medium",
+      "equipment": [
+        "ขวดโหลแก้วใสพร้อมฝา",
+        "หินภูเขาไฟ ดินปลูก และถ่านคาร์บอน",
+        "มอสสดและต้นเฟิร์นจิ๋ว",
+        "ฟอร์เซปคีบ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เรียงชั้นระบายน้ำและดิน",
+          "instruction": "ใส่หินภูเขาไฟชั้นล่าง ตามด้วยถ่านดูดกลิ่นและดินปลูก",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "จัดวางมอสและต้นไม้เล็ก",
+          "instruction": "ใช้ฟอร์เซปคีบต้นไม้ลงปลูก จัดองค์ประกอบให้มีมิติสูงต่ำ",
+          "durationMinutes": 22
+        },
+        {
+          "step": 3,
+          "title": "พรมน้ำพอชุ่มและปิดฝา",
+          "instruction": "ฉีดละอองน้ำเบาๆ เช็ดกระจกด้านในให้ใส แล้วปิดฝารักษาความชื้น",
+          "durationMinutes": 8
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-31",
+      "title": "Japanese Origami Paper Crafting",
+      "titleTh": "พับกระดาษโอริกามิญี่ปุ่นฝึกสมาธิ",
+      "categoryId": "cat-hobbies",
+      "description": "พับนกกระเรียน ซากุระ หรือกล่องใส่ของน่ารักจากกระดาษสี ฝึกความประณีตของนิ้วมือและสมาธิที่จดจ่อ",
+      "durationMinutes": 25,
+      "energyLevel": "low",
+      "equipment": [
+        "กระดาษพับโอริกามิลายสวยงาม",
+        "ไม้บรรทัดหรือกระดูกพับกระดาษ"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "เลือกสีและแบบพับที่ชอบ",
+          "instruction": "เริ่มต้นด้วยแบบคลาสสิก เช่น นกกระเรียนมงคล (Orizuru)",
+          "durationMinutes": 3
+        },
+        {
+          "step": 2,
+          "title": "พับตามรอยเส้นและมุมอย่างประณีต",
+          "instruction": "กดรีดรอยพับให้คมชัด ค่อยๆ คลี่และซ้อนกลีบกระดาษ",
+          "durationMinutes": 18
+        },
+        {
+          "step": 3,
+          "title": "ดึงขยายรูปทรงและตกแต่ง",
+          "instruction": "คลี่ปีกนกให้สมดุล หรือจัดวางเป็นของประดับบนโต๊ะทำงาน",
+          "durationMinutes": 4
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-32",
+      "title": "Japanese Matcha Whisking Ceremony",
+      "titleTh": "ชงมัทฉะแท้ด้วยแปรงไม้ไผ่ Chasen",
+      "categoryId": "cat-cooking",
+      "description": "สัมผัสพิธีชงชาเขียวมัทฉะดั้งเดิม ตีผงชาด้วยแปรงไม้ไผ่จนเกิดฟองนุ่มละมุน ให้รสชาติอูมามิแท้",
+      "durationMinutes": 20,
+      "energyLevel": "low",
+      "equipment": [
+        "ผงมัทฉะเกรดพิธีชงชา (Ceremonial Grade)",
+        "แปรงตีชาไม้ไผ่ (Chasen)",
+        "ถ้วยชงชาก้นกว้าง (Chawan)",
+        "กระชอนกรองผงชา"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ร่อนผงมัทฉะและวอร์มถ้วย",
+          "instruction": "ร่อนผงมัทฉะ 2 กรัมลงในถ้วยเพื่อไม่ให้เป็นก้อน แช่แปรงในน้ำอุ่นให้นิ่ม",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ตีชาด้วยรูปตัว W อย่างรวดเร็ว",
+          "instruction": "เติมน้ำอุ่น 80°C ประมาณ 60-70ml ใช้ข้อมือสะบัดแปรงจนเป็นฟองละเอียด",
+          "durationMinutes": 10
+        },
+        {
+          "step": 3,
+          "title": "ลิ้มรสความหอมนุ่มและกลมกล่อม",
+          "instruction": "จิบชาพร้อมสัมผัสฟองนุ่มและความสดชื่นสไตล์ญี่ปุ่นแท้",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-33",
+      "title": "Podcasting & Voice Memo Storytelling",
+      "titleTh": "อัดพอดแคสต์หรือบันทึกเสียงเล่าเรื่องราว",
+      "categoryId": "cat-learning",
+      "description": "ฝึกทักษะการสื่อสารและเรียบเรียงความคิด ด้วยการบันทึกเสียงเล่าเรื่องราวที่ประทับใจในความยาว 10 นาที",
+      "durationMinutes": 30,
+      "energyLevel": "medium",
+      "equipment": [
+        "สมาร์ตโฟนหรือไมโครโฟนบันทึกเสียง",
+        "หัวข้อเรื่องสั้นๆ 1 เรื่อง",
+        "หูฟัง"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "จดหัวข้อประเด็นหลัก 3 ข้อ",
+          "instruction": "ร่างโครงสร้าง บทนำ จุดพีค และบทสรุปข้อคิด",
+          "durationMinutes": 8
+        },
+        {
+          "step": 2,
+          "title": "กดบันทึกเสียงและเล่าอย่างเป็นธรรมชาติ",
+          "instruction": "ควบคุมโทนเสียง จังหวะหายใจ และความชัดเจนของคำพูด",
+          "durationMinutes": 14
+        },
+        {
+          "step": 3,
+          "title": "เปิดฟังย้อนหลังและประเมินตนเอง",
+          "instruction": "ฟังความลื่นไหลและจดโน้ตจุดที่อยากพัฒนาต่อไป",
+          "durationMinutes": 8
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-34",
+      "title": "Ukulele Strumming & Easy Pop Song",
+      "titleTh": "ตีคอร์ดอูคูเลเล่เพลงป็อปน่ารัก 4 คอร์ด",
+      "categoryId": "cat-music",
+      "description": "ฝึกเล่นคอร์ด C, Am, F, G บนอูคูเลเล่ กีตาร์ฮาวายตัวเล็กน่ารัก เพลินใจง่าย เสียงสดใส",
+      "durationMinutes": 25,
+      "energyLevel": "medium",
+      "equipment": [
+        "อูคูเลเล่สายไนลอน",
+        "ตารางคอร์ด 4 คอร์ดพื้นฐาน"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ตั้งสาย G-C-E-A และวอร์มนิ้ว",
+          "instruction": "เช็คความตึงสายและจับฟอร์มมือซ้ายให้ไม่ติดเฟรต",
+          "durationMinutes": 5
+        },
+        {
+          "step": 2,
+          "title": "ฝึกดีดสัดส่วน Down-Down-Up-Up-Down-Up",
+          "instruction": "ซ้อมสลับคอร์ด C -> Am -> F -> G อย่างต่อเนื่อง",
+          "durationMinutes": 15
+        },
+        {
+          "step": 3,
+          "title": "ร้องและเล่นเพลงโปรด 1 ท่อน",
+          "instruction": "ฮัมเพลงตามจังหวะเพื่อความเพลิดเพลินและผ่อนคลาย",
+          "durationMinutes": 5
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-35",
+      "title": "Digital Calligraphy & Lettering Practice",
+      "titleTh": "ฝึกเขียนอักษรวิจิตรดิจิทัล (Digital Calligraphy)",
+      "categoryId": "cat-art",
+      "description": "ฝึกน้ำหนักการลงเส้นหนักเบา (Thick & Thin strokes) เขียนคำคมหรือตัวอักษรภาษาอังกฤษสไตล์โมเดิร์น",
+      "durationMinutes": 30,
+      "energyLevel": "low",
+      "equipment": [
+        "แท็บเล็ตพร้อมปากกาสไตลัส หรือ ปากกาพู่กัน Brush Pen",
+        "แอปวาดรูปหรือสมุดตารางฝึกเส้น"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ฝึกเส้นขึ้นเบา เส้นลงหนัก (Up thin, Down thick)",
+          "instruction": "วอร์มลากเส้นซิกแซกและวงรีเพื่อจับน้ำหนักมือ",
+          "durationMinutes": 8
+        },
+        {
+          "step": 2,
+          "title": "เขียนตัวอักษรเป็นคำสั้นๆ เช่น \"Peace\" หรือ \"Focus\"",
+          "instruction": "เชื่อมต่อตัวอักษรอย่างอ่อนช้อยและสมดุล",
+          "durationMinutes": 16
+        },
+        {
+          "step": 3,
+          "title": "เติมเงาและตกแต่งขอบอักษร",
+          "instruction": "เพิ่มไฮไลต์สีขาวหรือเงาสีพาสเทลให้ข้อความโดดเด่น",
+          "durationMinutes": 6
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-36",
+      "title": "Daily News Podcast Listening & Shadowing",
+      "titleTh": "ฝึกฟังข่าวภาษาอังกฤษสากลพร้อมพูดตาม (Shadowing)",
+      "categoryId": "cat-language",
+      "description": "ฟังพอดแคสต์ข่าวสั้นระดับโลก 6-10 นาที แล้วพูดเลียนแบบจังหวะการออกเสียงของเจ้าของภาษาทันที",
+      "durationMinutes": 25,
+      "energyLevel": "medium",
+      "equipment": [
+        "แอปพอดแคสต์ (เช่น BBC 6 Minute English หรือ NPR)",
+        "หูฟัง",
+        "สมุดจดสำนวนเด่น"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "ฟังเนื้อหาข่าวรอบแรกเพื่อจับใจความ",
+          "instruction": "ทำความเข้าใจประเด็นหลักโดยไม่ต้องหยุดเสียง",
+          "durationMinutes": 7
+        },
+        {
+          "step": 2,
+          "title": "เปิดสคริปต์และฝึกพูดตาม (Shadowing)",
+          "instruction": "ออกเสียงเลียนแบบสำเนียงและน้ำเสียงสูงต่ำอย่างเป็นธรรมชาติ",
+          "durationMinutes": 12
+        },
+        {
+          "step": 3,
+          "title": "จดบันทึก 3 สำนวนน่าใช้",
+          "instruction": "นำสำนวนที่ได้ยินไปแต่งประโยคในบริบทชีวิตประจำวัน",
+          "durationMinutes": 6
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    },
+    {
+      "id": "act-37",
+      "title": "Build a Terminal Command-Line Tool in Node.js",
+      "titleTh": "สร้างโปรแกรมคำสั่ง CLI ด้วย Node.js",
+      "categoryId": "cat-technology",
+      "description": "เขียนสคริปต์สั้นๆ ในเทอร์มินัลเพื่อคำนวณภาษี สุ่มไอเดีย หรือดึงข้อมูลสภาพอากาศ ใช้งานได้จริงบนคอมพิวเตอร์",
+      "durationMinutes": 45,
+      "energyLevel": "high",
+      "equipment": [
+        "คอมพิวเตอร์พร้อม Node.js",
+        "Visual Studio Code / Terminal"
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "title": "กำหนดคำสั่งและ Argument รับค่า",
+          "instruction": "ออกแบบรูปแบบคำสั่ง เช่น node cli.js --task calculate",
+          "durationMinutes": 10
+        },
+        {
+          "step": 2,
+          "title": "เขียนโค้ดตรรกะประมวลผลและการแสดงผลสี",
+          "instruction": "ใช้ process.argv หรือไลบรารี CLI เพื่อจัดรูปแบบข้อความ",
+          "durationMinutes": 25
+        },
+        {
+          "step": 3,
+          "title": "ทดสอบรันคำสั่งบน Terminal",
+          "instruction": "รันคำสั่งจริงพร้อมตรวจสอบการจัดการข้อผิดพลาด (Error handling)",
+          "durationMinutes": 10
+        }
+      ],
+      "isActive": true,
+      "createdAt": "2026-09-17T03:11:52.653Z",
+      "updatedAt": "2026-09-17T03:11:52.653Z"
+    }
+  ],
+  "user_sessions": [
+    {
+      "id": "sid-1789614344029-gumf",
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "userId": null,
+      "startedAt": "2026-09-17T03:05:44.029Z",
+      "lastActiveAt": "2026-09-17T03:11:45.616Z",
+      "endedAt": null,
+      "durationSeconds": 362,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "currentPage": "/match",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/"
+    },
+    {
+      "id": "sid-1789570469388-k6io",
+      "sessionId": "sess_1789569528418_33efue4",
+      "userId": "usr-mem-1",
+      "startedAt": "2026-09-16T14:54:29.388Z",
+      "lastActiveAt": "2026-09-17T03:11:41.591Z",
+      "endedAt": null,
+      "durationSeconds": 44232,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "currentPage": "/",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "https://aistudio.google.com/"
+    },
+    {
+      "id": "sid-1789569021577-g7nh",
+      "sessionId": "test-session-1",
+      "userId": null,
+      "startedAt": "2026-09-16T14:30:21.577Z",
+      "lastActiveAt": "2026-09-17T03:08:35.341Z",
+      "endedAt": null,
+      "durationSeconds": 0,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "currentPage": "/home",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "direct"
+    },
+    {
+      "id": "sid-sess-live-1",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-live-1",
+      "startedAt": "2026-09-16T14:24:52.715Z",
+      "lastActiveAt": "2026-09-17T03:08:05.341Z",
+      "endedAt": null,
+      "durationSeconds": 314,
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS",
+      "currentPage": "/activity-match",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "https://google.com"
+    },
+    {
+      "id": "sid-sess-live-2",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-live-2",
+      "startedAt": "2026-09-16T14:22:38.715Z",
+      "lastActiveAt": "2026-09-17T03:07:30.341Z",
+      "endedAt": null,
+      "durationSeconds": 448,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS",
+      "currentPage": "/activities/act-1",
+      "country": "Thailand",
+      "region": "Chiang Mai",
+      "language": "th-TH",
+      "referrer": "direct"
+    },
+    {
+      "id": "sid-sess-live-3",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-live-3",
+      "startedAt": "2026-09-16T14:20:21.715Z",
+      "lastActiveAt": "2026-09-17T03:06:40.341Z",
+      "endedAt": null,
+      "durationSeconds": 585,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "currentPage": "/dashboard",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "https://google.com"
+    },
+    {
+      "id": "sid-sess-live-4",
+      "userId": null,
+      "sessionId": "sess-live-4",
+      "startedAt": "2026-09-16T14:18:04.715Z",
+      "lastActiveAt": "2026-09-16T14:52:32.529Z",
+      "endedAt": null,
+      "durationSeconds": 722,
+      "deviceType": "mobile",
+      "browser": "Chrome",
+      "operatingSystem": "Android",
+      "currentPage": "/home",
+      "country": "Thailand",
+      "region": "Phuket",
+      "language": "th-TH",
+      "referrer": "direct"
+    },
+    {
+      "id": "sid-sess-live-5",
+      "userId": null,
+      "sessionId": "sess-live-5",
+      "startedAt": "2026-09-16T14:15:38.715Z",
+      "lastActiveAt": "2026-09-16T14:51:42.529Z",
+      "endedAt": null,
+      "durationSeconds": 868,
+      "deviceType": "tablet",
+      "browser": "Safari",
+      "operatingSystem": "iOS",
+      "currentPage": "/activity-match",
+      "country": "Thailand",
+      "region": "Nonthaburi",
+      "language": "th-TH",
+      "referrer": "https://google.com"
+    },
+    {
+      "id": "sid-sess-live-6",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-live-6",
+      "startedAt": "2026-09-16T14:13:11.715Z",
+      "lastActiveAt": "2026-09-16T14:28:11.715Z",
+      "endedAt": null,
+      "durationSeconds": 1015,
+      "deviceType": "mobile",
+      "browser": "Chrome",
+      "operatingSystem": "Android",
+      "currentPage": "/activities/act-2",
+      "country": "Thailand",
+      "region": "Bangkok",
+      "language": "th-TH",
+      "referrer": "direct"
+    },
+    {
+      "id": "sid-sess-live-7",
+      "userId": null,
+      "sessionId": "sess-live-7",
+      "startedAt": "2026-09-16T14:10:46.715Z",
+      "lastActiveAt": "2026-09-16T14:27:46.715Z",
+      "endedAt": null,
+      "durationSeconds": 1160,
+      "deviceType": "desktop",
+      "browser": "Edge",
+      "operatingSystem": "Windows",
+      "currentPage": "/recommendations",
+      "country": "Thailand",
+      "region": "Chonburi",
+      "language": "th-TH",
+      "referrer": "https://google.com"
+    },
+    {
+      "id": "sid-sess-live-8",
+      "userId": null,
+      "sessionId": "sess-live-8",
+      "startedAt": "2026-09-16T14:07:56.715Z",
+      "lastActiveAt": "2026-09-16T14:26:56.715Z",
+      "endedAt": null,
+      "durationSeconds": 1330,
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS",
+      "currentPage": "/home",
+      "country": "Thailand",
+      "region": "Khon Kaen",
+      "language": "th-TH",
+      "referrer": "direct"
+    }
+  ],
+  "analytics_events": [
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/match",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614700160-gtah",
+      "createdAt": "2026-09-17T03:11:40.160Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/match",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614700159-u48t",
+      "createdAt": "2026-09-17T03:11:40.159Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614565610-0lvm",
+      "createdAt": "2026-09-17T03:09:25.610Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789614565609-n7ad",
+      "createdAt": "2026-09-17T03:09:25.609Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "start_activity",
+      "page": "/match",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {
+        "title": "ทำอาหารคลีนเพื่อสุขภาพ 1 มื้อ"
+      },
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/",
+      "id": "ev-1789614478205-qcyd",
+      "createdAt": "2026-09-17T03:07:58.205Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "start_activity",
+      "page": "/match",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {
+        "title": "โยคะฮฐะ ยืดเหยียดคลายกล้ามเนื้อ"
+      },
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/",
+      "id": "ev-1789614429888-pgf4",
+      "createdAt": "2026-09-17T03:07:09.888Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/match",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/",
+      "id": "ev-1789614356747-7iss",
+      "createdAt": "2026-09-17T03:05:56.747Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/",
+      "id": "ev-1789614344037-hxqt",
+      "createdAt": "2026-09-17T03:05:44.037Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789614343729_wm0mbl2",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Safari",
+      "operatingSystem": "macOS",
+      "referrer": "https://ais-dev-ausums5wjfholzlsxj4tfz-918245239194.asia-southeast1.run.app/",
+      "id": "ev-1789614344035-b8d8",
+      "createdAt": "2026-09-17T03:05:44.035Z"
+    },
+    {
+      "userId": "usr-mem-1",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "complete_activity",
+      "page": "/session/act-1",
+      "activityId": "act-1",
+      "metadata": {
+        "durationSeconds": 10,
+        "notes": ""
+      },
+      "id": "ev-1789575382216-4oki",
+      "createdAt": "2026-09-16T16:16:22.216Z"
+    },
+    {
+      "userId": "usr-mem-1",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "start_activity",
+      "page": "/",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {
+        "title": "อ่านหนังสือพัฒนาตนเอง 30 นาที"
+      },
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789575372085-0oxl",
+      "createdAt": "2026-09-16T16:16:12.085Z"
+    },
+    {
+      "userId": "usr-mem-1",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "get_recommendation",
+      "page": "/",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {
+        "mood": "stressed",
+        "availableTime": 30,
+        "energyLevel": "low",
+        "count": 4
+      },
+      "id": "ev-1789575366452-uw5q",
+      "createdAt": "2026-09-16T16:16:06.452Z"
+    },
+    {
+      "userId": "usr-mem-1",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "login",
+      "page": "/",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "id": "ev-1789570573986-lch8",
+      "createdAt": "2026-09-16T14:56:13.986Z"
+    },
+    {
+      "userId": "usr-mem-1",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "login",
+      "page": "/",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "id": "ev-1789570562512-vvca",
+      "createdAt": "2026-09-16T14:56:02.512Z"
+    },
+    {
+      "userId": "usr-1789570549835-t22n",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "register",
+      "page": "/",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "id": "ev-1789570549836-tgpf",
+      "createdAt": "2026-09-16T14:55:49.836Z"
+    },
+    {
+      "userId": "usr-1789570512860-eds8",
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "register",
+      "page": "/",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "id": "ev-1789570512860-uek2",
+      "createdAt": "2026-09-16T14:55:12.860Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789570469438-ffrt",
+      "createdAt": "2026-09-16T14:54:29.438Z"
+    },
+    {
+      "userId": null,
+      "sessionId": "sess_1789569528418_33efue4",
+      "eventType": "page_view",
+      "page": "/",
+      "activityId": null,
+      "categoryId": null,
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows",
+      "referrer": "https://aistudio.google.com/",
+      "id": "ev-1789570469391-olsm",
+      "createdAt": "2026-09-16T14:54:29.391Z"
+    },
+    {
+      "id": "ev-live-1",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-live-1",
+      "eventType": "page_view",
+      "page": "/activity-match",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:29:52.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-live-2",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-live-2",
+      "eventType": "page_view",
+      "page": "/activities/act-1",
+      "activityId": "act-1",
+      "createdAt": "2026-09-16T14:29:38.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-live-3",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-live-3",
+      "eventType": "page_view",
+      "page": "/dashboard",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:29:21.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "Windows"
+    },
+    {
+      "id": "ev-live-4",
+      "userId": null,
+      "sessionId": "sess-live-4",
+      "eventType": "page_view",
+      "page": "/home",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:29:04.715Z",
+      "deviceType": "mobile",
+      "browser": "Chrome",
+      "operatingSystem": "Android"
+    },
+    {
+      "id": "ev-live-5",
+      "userId": null,
+      "sessionId": "sess-live-5",
+      "eventType": "page_view",
+      "page": "/activity-match",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:28:38.715Z",
+      "deviceType": "tablet",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-live-6",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-live-6",
+      "eventType": "page_view",
+      "page": "/activities/act-2",
+      "activityId": "act-2",
+      "createdAt": "2026-09-16T14:28:11.715Z",
+      "deviceType": "mobile",
+      "browser": "Chrome",
+      "operatingSystem": "Android"
+    },
+    {
+      "id": "ev-live-7",
+      "userId": null,
+      "sessionId": "sess-live-7",
+      "eventType": "page_view",
+      "page": "/recommendations",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:27:46.715Z",
+      "deviceType": "desktop",
+      "browser": "Edge",
+      "operatingSystem": "Windows"
+    },
+    {
+      "id": "ev-live-8",
+      "userId": null,
+      "sessionId": "sess-live-8",
+      "eventType": "page_view",
+      "page": "/home",
+      "activityId": null,
+      "createdAt": "2026-09-16T14:26:56.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-1",
+      "userId": null,
+      "sessionId": "sess-hist-1",
+      "eventType": "page_view",
+      "page": "/home",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:27:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-2",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-2",
+      "eventType": "search_activity",
+      "page": "/activity-match",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T07:25:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-3",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-3",
+      "eventType": "get_recommendation",
+      "page": "/recommendations",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:21:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-4",
+      "userId": null,
+      "sessionId": "sess-hist-4",
+      "eventType": "view_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:34:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-5",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-5",
+      "eventType": "start_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:44:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-6",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-6",
+      "eventType": "complete_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:39:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-7",
+      "userId": null,
+      "sessionId": "sess-hist-7",
+      "eventType": "save_activity",
+      "page": "/dashboard",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:45:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-8",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-8",
+      "eventType": "favorite_activity",
+      "page": "/profile",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:32:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-9",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-9",
+      "eventType": "login",
+      "page": "/my-activities",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:37:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-10",
+      "userId": null,
+      "sessionId": "sess-hist-10",
+      "eventType": "logout",
+      "page": "/home",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:32:06.715Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-11",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-11",
+      "eventType": "page_view",
+      "page": "/activity-match",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:56:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-12",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-12",
+      "eventType": "search_activity",
+      "page": "/recommendations",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T11:41:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-13",
+      "userId": null,
+      "sessionId": "sess-hist-13",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-1",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:17:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-14",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-14",
+      "eventType": "view_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:15:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-15",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-15",
+      "eventType": "start_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:51:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-16",
+      "userId": null,
+      "sessionId": "sess-hist-16",
+      "eventType": "complete_activity",
+      "page": "/dashboard",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:43:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-17",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-17",
+      "eventType": "save_activity",
+      "page": "/profile",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:20:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-18",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-18",
+      "eventType": "favorite_activity",
+      "page": "/my-activities",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:23:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-19",
+      "userId": null,
+      "sessionId": "sess-hist-19",
+      "eventType": "login",
+      "page": "/home",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:46:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-20",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-20",
+      "eventType": "logout",
+      "page": "/activity-match",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:43:06.715Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-21",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-21",
+      "eventType": "page_view",
+      "page": "/recommendations",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:58:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-22",
+      "userId": null,
+      "sessionId": "sess-hist-22",
+      "eventType": "search_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T12:02:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-23",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-23",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-2",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:02:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-24",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-24",
+      "eventType": "view_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:38:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-25",
+      "userId": null,
+      "sessionId": "sess-hist-25",
+      "eventType": "start_activity",
+      "page": "/dashboard",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:33:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-26",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-1",
+      "eventType": "complete_activity",
+      "page": "/profile",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:09:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-27",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-2",
+      "eventType": "save_activity",
+      "page": "/my-activities",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:38:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-28",
+      "userId": null,
+      "sessionId": "sess-hist-3",
+      "eventType": "favorite_activity",
+      "page": "/home",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:43:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-29",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-4",
+      "eventType": "login",
+      "page": "/activity-match",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:43:06.715Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-30",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-5",
+      "eventType": "logout",
+      "page": "/recommendations",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T14:25:06.715Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-31",
+      "userId": null,
+      "sessionId": "sess-hist-6",
+      "eventType": "page_view",
+      "page": "/activities/act-1",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:13:06.715Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-32",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-7",
+      "eventType": "search_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T05:59:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-33",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-8",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-3",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:38:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-34",
+      "userId": null,
+      "sessionId": "sess-hist-9",
+      "eventType": "view_activity",
+      "page": "/dashboard",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:47:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-35",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-10",
+      "eventType": "start_activity",
+      "page": "/profile",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:32:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-36",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-11",
+      "eventType": "complete_activity",
+      "page": "/my-activities",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:55:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-37",
+      "userId": null,
+      "sessionId": "sess-hist-12",
+      "eventType": "save_activity",
+      "page": "/home",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:25:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-38",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-13",
+      "eventType": "favorite_activity",
+      "page": "/activity-match",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:56:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-39",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-14",
+      "eventType": "login",
+      "page": "/recommendations",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:33:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-40",
+      "userId": null,
+      "sessionId": "sess-hist-15",
+      "eventType": "logout",
+      "page": "/activities/act-1",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:50:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-41",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-16",
+      "eventType": "page_view",
+      "page": "/activities/act-2",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T14:14:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-42",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-17",
+      "eventType": "search_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T13:55:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-43",
+      "userId": null,
+      "sessionId": "sess-hist-18",
+      "eventType": "get_recommendation",
+      "page": "/dashboard",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:25:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-44",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-19",
+      "eventType": "view_activity",
+      "page": "/profile",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:58:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-45",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-20",
+      "eventType": "start_activity",
+      "page": "/my-activities",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:06:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-46",
+      "userId": null,
+      "sessionId": "sess-hist-21",
+      "eventType": "complete_activity",
+      "page": "/home",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:15:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-47",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-22",
+      "eventType": "save_activity",
+      "page": "/activity-match",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:33:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-48",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-23",
+      "eventType": "favorite_activity",
+      "page": "/recommendations",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:55:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-49",
+      "userId": null,
+      "sessionId": "sess-hist-24",
+      "eventType": "login",
+      "page": "/activities/act-1",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:43:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-50",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-25",
+      "eventType": "logout",
+      "page": "/activities/act-2",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T02:42:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-51",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-1",
+      "eventType": "page_view",
+      "page": "/activities/act-3",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:11:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-52",
+      "userId": null,
+      "sessionId": "sess-hist-2",
+      "eventType": "search_activity",
+      "page": "/dashboard",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T12:01:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-53",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-3",
+      "eventType": "get_recommendation",
+      "page": "/profile",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:35:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-54",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-4",
+      "eventType": "view_activity",
+      "page": "/my-activities",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:01:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-55",
+      "userId": null,
+      "sessionId": "sess-hist-5",
+      "eventType": "start_activity",
+      "page": "/home",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:12:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-56",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-6",
+      "eventType": "complete_activity",
+      "page": "/activity-match",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:55:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-57",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-7",
+      "eventType": "save_activity",
+      "page": "/recommendations",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:06:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-58",
+      "userId": null,
+      "sessionId": "sess-hist-8",
+      "eventType": "favorite_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:17:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-59",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-9",
+      "eventType": "login",
+      "page": "/activities/act-2",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:57:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-60",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-10",
+      "eventType": "logout",
+      "page": "/activities/act-3",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:51:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-61",
+      "userId": null,
+      "sessionId": "sess-hist-11",
+      "eventType": "page_view",
+      "page": "/dashboard",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:16:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-62",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-12",
+      "eventType": "search_activity",
+      "page": "/profile",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T04:46:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-63",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-13",
+      "eventType": "get_recommendation",
+      "page": "/my-activities",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:49:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-64",
+      "userId": null,
+      "sessionId": "sess-hist-14",
+      "eventType": "view_activity",
+      "page": "/home",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:25:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-65",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-15",
+      "eventType": "start_activity",
+      "page": "/activity-match",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:20:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-66",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-16",
+      "eventType": "complete_activity",
+      "page": "/recommendations",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:26:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-67",
+      "userId": null,
+      "sessionId": "sess-hist-17",
+      "eventType": "save_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:21:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-68",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-18",
+      "eventType": "favorite_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:40:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-69",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-19",
+      "eventType": "login",
+      "page": "/activities/act-3",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:34:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-70",
+      "userId": null,
+      "sessionId": "sess-hist-20",
+      "eventType": "logout",
+      "page": "/dashboard",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:53:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-71",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-21",
+      "eventType": "page_view",
+      "page": "/profile",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T14:14:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-72",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-22",
+      "eventType": "search_activity",
+      "page": "/my-activities",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T03:35:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-73",
+      "userId": null,
+      "sessionId": "sess-hist-23",
+      "eventType": "get_recommendation",
+      "page": "/home",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:03:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-74",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-24",
+      "eventType": "view_activity",
+      "page": "/activity-match",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:27:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-75",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-25",
+      "eventType": "start_activity",
+      "page": "/recommendations",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:04:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-76",
+      "userId": null,
+      "sessionId": "sess-hist-1",
+      "eventType": "complete_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:25:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-77",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-2",
+      "eventType": "save_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:00:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-78",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-3",
+      "eventType": "favorite_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:27:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-79",
+      "userId": null,
+      "sessionId": "sess-hist-4",
+      "eventType": "login",
+      "page": "/dashboard",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:27:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-80",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-5",
+      "eventType": "logout",
+      "page": "/profile",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:18:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-81",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-6",
+      "eventType": "page_view",
+      "page": "/my-activities",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:28:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-82",
+      "userId": null,
+      "sessionId": "sess-hist-7",
+      "eventType": "search_activity",
+      "page": "/home",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T09:30:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-83",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-8",
+      "eventType": "get_recommendation",
+      "page": "/activity-match",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:12:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-84",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-9",
+      "eventType": "view_activity",
+      "page": "/recommendations",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:31:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-85",
+      "userId": null,
+      "sessionId": "sess-hist-10",
+      "eventType": "start_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:29:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-86",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-11",
+      "eventType": "complete_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:15:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-87",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-12",
+      "eventType": "save_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T07:18:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-88",
+      "userId": null,
+      "sessionId": "sess-hist-13",
+      "eventType": "favorite_activity",
+      "page": "/dashboard",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:58:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-89",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-14",
+      "eventType": "login",
+      "page": "/profile",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:09:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-90",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-15",
+      "eventType": "logout",
+      "page": "/my-activities",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:52:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-91",
+      "userId": null,
+      "sessionId": "sess-hist-16",
+      "eventType": "page_view",
+      "page": "/home",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:15:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-92",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-17",
+      "eventType": "search_activity",
+      "page": "/activity-match",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T03:29:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-93",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-18",
+      "eventType": "get_recommendation",
+      "page": "/recommendations",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:33:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-94",
+      "userId": null,
+      "sessionId": "sess-hist-19",
+      "eventType": "view_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:21:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-95",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-20",
+      "eventType": "start_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:24:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-96",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-21",
+      "eventType": "complete_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:11:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-97",
+      "userId": null,
+      "sessionId": "sess-hist-22",
+      "eventType": "save_activity",
+      "page": "/dashboard",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:13:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-98",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-23",
+      "eventType": "favorite_activity",
+      "page": "/profile",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:24:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-99",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-24",
+      "eventType": "login",
+      "page": "/my-activities",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:50:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-100",
+      "userId": null,
+      "sessionId": "sess-hist-25",
+      "eventType": "logout",
+      "page": "/home",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:35:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-101",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-1",
+      "eventType": "page_view",
+      "page": "/activity-match",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:11:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-102",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-2",
+      "eventType": "search_activity",
+      "page": "/recommendations",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T12:31:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-103",
+      "userId": null,
+      "sessionId": "sess-hist-3",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-1",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:13:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-104",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-4",
+      "eventType": "view_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:43:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-105",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-5",
+      "eventType": "start_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:58:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-106",
+      "userId": null,
+      "sessionId": "sess-hist-6",
+      "eventType": "complete_activity",
+      "page": "/dashboard",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:28:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-107",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-7",
+      "eventType": "save_activity",
+      "page": "/profile",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:46:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-108",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-8",
+      "eventType": "favorite_activity",
+      "page": "/my-activities",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:28:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-109",
+      "userId": null,
+      "sessionId": "sess-hist-9",
+      "eventType": "login",
+      "page": "/home",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:12:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-110",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-10",
+      "eventType": "logout",
+      "page": "/activity-match",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T02:26:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-111",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-11",
+      "eventType": "page_view",
+      "page": "/recommendations",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:38:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-112",
+      "userId": null,
+      "sessionId": "sess-hist-12",
+      "eventType": "search_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T07:14:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-113",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-13",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-2",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:17:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-114",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-14",
+      "eventType": "view_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:51:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-115",
+      "userId": null,
+      "sessionId": "sess-hist-15",
+      "eventType": "start_activity",
+      "page": "/dashboard",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T14:24:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-116",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-16",
+      "eventType": "complete_activity",
+      "page": "/profile",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:52:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-117",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-17",
+      "eventType": "save_activity",
+      "page": "/my-activities",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:54:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-118",
+      "userId": null,
+      "sessionId": "sess-hist-18",
+      "eventType": "favorite_activity",
+      "page": "/home",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T08:06:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-119",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-19",
+      "eventType": "login",
+      "page": "/activity-match",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:21:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-120",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-20",
+      "eventType": "logout",
+      "page": "/recommendations",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:38:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-121",
+      "userId": null,
+      "sessionId": "sess-hist-21",
+      "eventType": "page_view",
+      "page": "/activities/act-1",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:52:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-122",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-22",
+      "eventType": "search_activity",
+      "page": "/activities/act-2",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T04:32:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-123",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-23",
+      "eventType": "get_recommendation",
+      "page": "/activities/act-3",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:35:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-124",
+      "userId": null,
+      "sessionId": "sess-hist-24",
+      "eventType": "view_activity",
+      "page": "/dashboard",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:59:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-125",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-25",
+      "eventType": "start_activity",
+      "page": "/profile",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:44:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-126",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-1",
+      "eventType": "complete_activity",
+      "page": "/my-activities",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:05:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-127",
+      "userId": null,
+      "sessionId": "sess-hist-2",
+      "eventType": "save_activity",
+      "page": "/home",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T05:32:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-128",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-3",
+      "eventType": "favorite_activity",
+      "page": "/activity-match",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T03:49:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-129",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-4",
+      "eventType": "login",
+      "page": "/recommendations",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:35:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-130",
+      "userId": null,
+      "sessionId": "sess-hist-5",
+      "eventType": "logout",
+      "page": "/activities/act-1",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:37:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-131",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-6",
+      "eventType": "page_view",
+      "page": "/activities/act-2",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:35:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-132",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-7",
+      "eventType": "search_activity",
+      "page": "/activities/act-3",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T03:59:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-133",
+      "userId": null,
+      "sessionId": "sess-hist-8",
+      "eventType": "get_recommendation",
+      "page": "/dashboard",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:51:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-134",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-9",
+      "eventType": "view_activity",
+      "page": "/profile",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:31:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-135",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-10",
+      "eventType": "start_activity",
+      "page": "/my-activities",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T13:06:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-136",
+      "userId": null,
+      "sessionId": "sess-hist-11",
+      "eventType": "complete_activity",
+      "page": "/home",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T14:09:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-137",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-12",
+      "eventType": "save_activity",
+      "page": "/activity-match",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:48:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-138",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-13",
+      "eventType": "favorite_activity",
+      "page": "/recommendations",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:28:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-139",
+      "userId": null,
+      "sessionId": "sess-hist-14",
+      "eventType": "login",
+      "page": "/activities/act-1",
+      "activityId": "act-7",
+      "categoryId": "cat-music",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:38:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-140",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-15",
+      "eventType": "logout",
+      "page": "/activities/act-2",
+      "activityId": "act-8",
+      "categoryId": "cat-technology",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:51:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-141",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-16",
+      "eventType": "page_view",
+      "page": "/activities/act-3",
+      "activityId": "act-9",
+      "categoryId": "cat-nature",
+      "metadata": {},
+      "createdAt": "2026-09-16T10:27:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-142",
+      "userId": null,
+      "sessionId": "sess-hist-17",
+      "eventType": "search_activity",
+      "page": "/dashboard",
+      "activityId": "act-10",
+      "categoryId": "cat-hobbies",
+      "metadata": {
+        "searchQuery": "ออกกำลังกาย",
+        "filterCategory": "cat-health"
+      },
+      "createdAt": "2026-09-16T05:01:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-143",
+      "userId": "usr-mem-2",
+      "sessionId": "sess-hist-18",
+      "eventType": "get_recommendation",
+      "page": "/profile",
+      "activityId": "act-11",
+      "categoryId": "cat-entertainment",
+      "metadata": {},
+      "createdAt": "2026-09-16T06:16:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-144",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-19",
+      "eventType": "view_activity",
+      "page": "/my-activities",
+      "activityId": "act-12",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:07:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-145",
+      "userId": null,
+      "sessionId": "sess-hist-20",
+      "eventType": "start_activity",
+      "page": "/home",
+      "activityId": "act-1",
+      "categoryId": "cat-learning",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:24:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-146",
+      "userId": "usr-admin-1",
+      "sessionId": "sess-hist-21",
+      "eventType": "complete_activity",
+      "page": "/activity-match",
+      "activityId": "act-2",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T12:31:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-147",
+      "userId": "usr-mem-1",
+      "sessionId": "sess-hist-22",
+      "eventType": "save_activity",
+      "page": "/recommendations",
+      "activityId": "act-3",
+      "categoryId": "cat-language",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:18:06.716Z",
+      "deviceType": "mobile",
+      "browser": "Safari",
+      "operatingSystem": "iOS"
+    },
+    {
+      "id": "ev-hist-148",
+      "userId": null,
+      "sessionId": "sess-hist-23",
+      "eventType": "favorite_activity",
+      "page": "/activities/act-1",
+      "activityId": "act-4",
+      "categoryId": "cat-health",
+      "metadata": {},
+      "createdAt": "2026-09-16T11:56:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-149",
+      "userId": "usr-mem-3",
+      "sessionId": "sess-hist-24",
+      "eventType": "login",
+      "page": "/activities/act-2",
+      "activityId": "act-5",
+      "categoryId": "cat-cooking",
+      "metadata": {},
+      "createdAt": "2026-09-16T04:20:06.716Z",
+      "deviceType": "desktop",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    },
+    {
+      "id": "ev-hist-150",
+      "userId": "usr-mem-4",
+      "sessionId": "sess-hist-25",
+      "eventType": "logout",
+      "page": "/activities/act-3",
+      "activityId": "act-6",
+      "categoryId": "cat-art",
+      "metadata": {},
+      "createdAt": "2026-09-16T09:12:06.716Z",
+      "deviceType": "tablet",
+      "browser": "Chrome",
+      "operatingSystem": "macOS"
+    }
+  ],
+  "daily_analytics": [
+    {
+      "id": "da-2026-08-18",
+      "date": "2026-08-18",
+      "visitors": 303,
+      "uniqueVisitors": 236,
+      "newMembers": 28,
+      "returningMembers": 167,
+      "sessions": 409,
+      "recommendations": 470,
+      "completedActivities": 179,
+      "averageSessionDuration": 581
+    },
+    {
+      "id": "da-2026-08-19",
+      "date": "2026-08-19",
+      "visitors": 362,
+      "uniqueVisitors": 282,
+      "newMembers": 26,
+      "returningMembers": 199,
+      "sessions": 489,
+      "recommendations": 561,
+      "completedActivities": 213,
+      "averageSessionDuration": 557
+    },
+    {
+      "id": "da-2026-08-20",
+      "date": "2026-08-20",
+      "visitors": 406,
+      "uniqueVisitors": 317,
+      "newMembers": 34,
+      "returningMembers": 223,
+      "sessions": 548,
+      "recommendations": 629,
+      "completedActivities": 239,
+      "averageSessionDuration": 571
+    },
+    {
+      "id": "da-2026-08-21",
+      "date": "2026-08-21",
+      "visitors": 397,
+      "uniqueVisitors": 310,
+      "newMembers": 31,
+      "returningMembers": 218,
+      "sessions": 536,
+      "recommendations": 615,
+      "completedActivities": 234,
+      "averageSessionDuration": 563
+    },
+    {
+      "id": "da-2026-08-22",
+      "date": "2026-08-22",
+      "visitors": 427,
+      "uniqueVisitors": 333,
+      "newMembers": 33,
+      "returningMembers": 235,
+      "sessions": 576,
+      "recommendations": 662,
+      "completedActivities": 252,
+      "averageSessionDuration": 526
+    },
+    {
+      "id": "da-2026-08-23",
+      "date": "2026-08-23",
+      "visitors": 383,
+      "uniqueVisitors": 299,
+      "newMembers": 35,
+      "returningMembers": 211,
+      "sessions": 517,
+      "recommendations": 594,
+      "completedActivities": 226,
+      "averageSessionDuration": 557
+    },
+    {
+      "id": "da-2026-08-24",
+      "date": "2026-08-24",
+      "visitors": 310,
+      "uniqueVisitors": 242,
+      "newMembers": 27,
+      "returningMembers": 171,
+      "sessions": 419,
+      "recommendations": 481,
+      "completedActivities": 183,
+      "averageSessionDuration": 588
+    },
+    {
+      "id": "da-2026-08-25",
+      "date": "2026-08-25",
+      "visitors": 363,
+      "uniqueVisitors": 283,
+      "newMembers": 29,
+      "returningMembers": 200,
+      "sessions": 490,
+      "recommendations": 563,
+      "completedActivities": 214,
+      "averageSessionDuration": 592
+    },
+    {
+      "id": "da-2026-08-26",
+      "date": "2026-08-26",
+      "visitors": 417,
+      "uniqueVisitors": 325,
+      "newMembers": 31,
+      "returningMembers": 229,
+      "sessions": 563,
+      "recommendations": 646,
+      "completedActivities": 245,
+      "averageSessionDuration": 570
+    },
+    {
+      "id": "da-2026-08-27",
+      "date": "2026-08-27",
+      "visitors": 424,
+      "uniqueVisitors": 331,
+      "newMembers": 35,
+      "returningMembers": 233,
+      "sessions": 572,
+      "recommendations": 657,
+      "completedActivities": 250,
+      "averageSessionDuration": 551
+    },
+    {
+      "id": "da-2026-08-28",
+      "date": "2026-08-28",
+      "visitors": 381,
+      "uniqueVisitors": 297,
+      "newMembers": 28,
+      "returningMembers": 210,
+      "sessions": 514,
+      "recommendations": 591,
+      "completedActivities": 225,
+      "averageSessionDuration": 553
+    },
+    {
+      "id": "da-2026-08-29",
+      "date": "2026-08-29",
+      "visitors": 410,
+      "uniqueVisitors": 320,
+      "newMembers": 29,
+      "returningMembers": 226,
+      "sessions": 554,
+      "recommendations": 636,
+      "completedActivities": 242,
+      "averageSessionDuration": 531
+    },
+    {
+      "id": "da-2026-08-30",
+      "date": "2026-08-30",
+      "visitors": 401,
+      "uniqueVisitors": 313,
+      "newMembers": 35,
+      "returningMembers": 221,
+      "sessions": 541,
+      "recommendations": 622,
+      "completedActivities": 236,
+      "averageSessionDuration": 575
+    },
+    {
+      "id": "da-2026-08-31",
+      "date": "2026-08-31",
+      "visitors": 364,
+      "uniqueVisitors": 284,
+      "newMembers": 26,
+      "returningMembers": 200,
+      "sessions": 491,
+      "recommendations": 564,
+      "completedActivities": 214,
+      "averageSessionDuration": 571
+    },
+    {
+      "id": "da-2026-09-01",
+      "date": "2026-09-01",
+      "visitors": 424,
+      "uniqueVisitors": 331,
+      "newMembers": 37,
+      "returningMembers": 233,
+      "sessions": 572,
+      "recommendations": 657,
+      "completedActivities": 250,
+      "averageSessionDuration": 569
+    },
+    {
+      "id": "da-2026-09-02",
+      "date": "2026-09-02",
+      "visitors": 447,
+      "uniqueVisitors": 349,
+      "newMembers": 32,
+      "returningMembers": 246,
+      "sessions": 603,
+      "recommendations": 693,
+      "completedActivities": 263,
+      "averageSessionDuration": 526
+    },
+    {
+      "id": "da-2026-09-03",
+      "date": "2026-09-03",
+      "visitors": 416,
+      "uniqueVisitors": 324,
+      "newMembers": 34,
+      "returningMembers": 229,
+      "sessions": 562,
+      "recommendations": 645,
+      "completedActivities": 245,
+      "averageSessionDuration": 587
+    },
+    {
+      "id": "da-2026-09-04",
+      "date": "2026-09-04",
+      "visitors": 361,
+      "uniqueVisitors": 282,
+      "newMembers": 32,
+      "returningMembers": 199,
+      "sessions": 487,
+      "recommendations": 560,
+      "completedActivities": 213,
+      "averageSessionDuration": 562
+    },
+    {
+      "id": "da-2026-09-05",
+      "date": "2026-09-05",
+      "visitors": 417,
+      "uniqueVisitors": 325,
+      "newMembers": 35,
+      "returningMembers": 229,
+      "sessions": 563,
+      "recommendations": 646,
+      "completedActivities": 245,
+      "averageSessionDuration": 527
+    },
+    {
+      "id": "da-2026-09-06",
+      "date": "2026-09-06",
+      "visitors": 447,
+      "uniqueVisitors": 349,
+      "newMembers": 36,
+      "returningMembers": 246,
+      "sessions": 603,
+      "recommendations": 693,
+      "completedActivities": 263,
+      "averageSessionDuration": 531
+    },
+    {
+      "id": "da-2026-09-07",
+      "date": "2026-09-07",
+      "visitors": 427,
+      "uniqueVisitors": 333,
+      "newMembers": 38,
+      "returningMembers": 235,
+      "sessions": 576,
+      "recommendations": 662,
+      "completedActivities": 252,
+      "averageSessionDuration": 568
+    },
+    {
+      "id": "da-2026-09-08",
+      "date": "2026-09-08",
+      "visitors": 465,
+      "uniqueVisitors": 363,
+      "newMembers": 40,
+      "returningMembers": 256,
+      "sessions": 628,
+      "recommendations": 721,
+      "completedActivities": 274,
+      "averageSessionDuration": 539
+    },
+    {
+      "id": "da-2026-09-09",
+      "date": "2026-09-09",
+      "visitors": 448,
+      "uniqueVisitors": 349,
+      "newMembers": 33,
+      "returningMembers": 246,
+      "sessions": 605,
+      "recommendations": 694,
+      "completedActivities": 264,
+      "averageSessionDuration": 544
+    },
+    {
+      "id": "da-2026-09-10",
+      "date": "2026-09-10",
+      "visitors": 395,
+      "uniqueVisitors": 308,
+      "newMembers": 33,
+      "returningMembers": 217,
+      "sessions": 533,
+      "recommendations": 612,
+      "completedActivities": 233,
+      "averageSessionDuration": 520
+    },
+    {
+      "id": "da-2026-09-11",
+      "date": "2026-09-11",
+      "visitors": 357,
+      "uniqueVisitors": 278,
+      "newMembers": 25,
+      "returningMembers": 196,
+      "sessions": 482,
+      "recommendations": 553,
+      "completedActivities": 210,
+      "averageSessionDuration": 568
+    },
+    {
+      "id": "da-2026-09-12",
+      "date": "2026-09-12",
+      "visitors": 452,
+      "uniqueVisitors": 353,
+      "newMembers": 38,
+      "returningMembers": 249,
+      "sessions": 610,
+      "recommendations": 701,
+      "completedActivities": 266,
+      "averageSessionDuration": 589
+    },
+    {
+      "id": "da-2026-09-13",
+      "date": "2026-09-13",
+      "visitors": 509,
+      "uniqueVisitors": 397,
+      "newMembers": 41,
+      "returningMembers": 280,
+      "sessions": 687,
+      "recommendations": 789,
+      "completedActivities": 300,
+      "averageSessionDuration": 550
+    },
+    {
+      "id": "da-2026-09-14",
+      "date": "2026-09-14",
+      "visitors": 478,
+      "uniqueVisitors": 373,
+      "newMembers": 40,
+      "returningMembers": 263,
+      "sessions": 645,
+      "recommendations": 741,
+      "completedActivities": 282,
+      "averageSessionDuration": 562
+    },
+    {
+      "id": "da-2026-09-15",
+      "date": "2026-09-15",
+      "visitors": 477,
+      "uniqueVisitors": 372,
+      "newMembers": 37,
+      "returningMembers": 262,
+      "sessions": 644,
+      "recommendations": 739,
+      "completedActivities": 281,
+      "averageSessionDuration": 555
+    },
+    {
+      "id": "da-2026-09-16",
+      "date": "2026-09-16",
+      "visitors": 430,
+      "uniqueVisitors": 335,
+      "newMembers": 30,
+      "returningMembers": 237,
+      "sessions": 581,
+      "recommendations": 667,
+      "completedActivities": 253,
+      "averageSessionDuration": 537
+    }
+  ],
+  "user_saved_activities": [
+    {
+      "id": "save-1",
+      "userId": "usr-mem-1",
+      "activityId": "act-1",
+      "isFavorite": true,
+      "isSaved": true,
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "save-2",
+      "userId": "usr-mem-1",
+      "activityId": "act-2",
+      "isFavorite": true,
+      "isSaved": true,
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "save-3",
+      "userId": "usr-mem-2",
+      "activityId": "act-6",
+      "isFavorite": true,
+      "isSaved": true,
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "save-4",
+      "userId": "usr-mem-2",
+      "activityId": "act-7",
+      "isFavorite": false,
+      "isSaved": true,
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "save-5",
+      "userId": "usr-mem-3",
+      "activityId": "act-4",
+      "isFavorite": true,
+      "isSaved": true,
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    }
+  ],
+  "user_activity_progress": [
+    {
+      "id": "prog-1789575382216",
+      "userId": "usr-mem-1",
+      "activityId": "act-1",
+      "status": "completed",
+      "startedAt": "2026-09-16T16:16:12.216Z",
+      "completedAt": "2026-09-16T16:16:22.216Z",
+      "durationSeconds": 10,
+      "notes": ""
+    },
+    {
+      "id": "prog-1",
+      "userId": "usr-mem-1",
+      "activityId": "act-1",
+      "status": "completed",
+      "startedAt": "2026-09-16T13:30:06.716Z",
+      "completedAt": "2026-09-16T14:00:06.716Z",
+      "durationSeconds": 1800,
+      "notes": "อ่านจบบทที่ 3 สนุกและได้พลังใจมาก"
+    },
+    {
+      "id": "prog-2",
+      "userId": "usr-mem-1",
+      "activityId": "act-2",
+      "status": "completed",
+      "startedAt": "2026-09-16T12:30:06.716Z",
+      "completedAt": "2026-09-16T13:00:06.716Z",
+      "durationSeconds": 1800
+    },
+    {
+      "id": "prog-3",
+      "userId": "usr-mem-2",
+      "activityId": "act-6",
+      "status": "started",
+      "startedAt": "2026-09-16T14:10:06.716Z",
+      "durationSeconds": 600
+    }
+  ],
+  "admin_audit_logs": [
+    {
+      "adminId": "usr-admin-1",
+      "adminName": "Admin",
+      "action": "Export Report",
+      "targetType": "report",
+      "description": "ส่งออกไฟล์รายงาน CSV: analytics.csv",
+      "id": "aud-1789569017102",
+      "timestamp": "2026-09-16T14:30:17.102Z"
+    },
+    {
+      "id": "aud-1",
+      "adminId": "usr-admin-1",
+      "adminName": "Admin Chalinrat",
+      "action": "Admin Login",
+      "targetType": "system",
+      "description": "เข้าสู่ระบบ Admin Dashboard สำเร็จ",
+      "timestamp": "2026-09-16T14:00:06.716Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "aud-2",
+      "adminId": "usr-admin-1",
+      "adminName": "Admin Chalinrat",
+      "action": "Update Settings",
+      "targetType": "settings",
+      "description": "อัปเดตค่าแจ้งเตือน Online Users Threshold เป็น 50 คน",
+      "timestamp": "2026-09-16T12:30:06.716Z",
+      "ipAddress": "127.0.0.1"
+    },
+    {
+      "id": "aud-3",
+      "adminId": "usr-admin-1",
+      "adminName": "Admin Chalinrat",
+      "action": "Create Activity",
+      "targetType": "activity",
+      "targetId": "act-12",
+      "description": "สร้างกิจกรรมใหม่ \"Hatha Yoga & Full Body Stretch\"",
+      "timestamp": "2026-09-12T14:30:06.716Z",
+      "ipAddress": "127.0.0.1"
+    }
+  ],
+  "system_logs": [
+    {
+      "id": "sys-1",
+      "level": "info",
+      "service": "Database",
+      "message": "Database schema verified and synced successfully.",
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "sys-2",
+      "level": "info",
+      "service": "Analytics",
+      "message": "Daily analytics aggregation rollup finished (30 days loaded).",
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    },
+    {
+      "id": "sys-3",
+      "level": "info",
+      "service": "Auth",
+      "message": "Token client and session tracker operational.",
+      "createdAt": "2026-09-16T14:30:06.716Z"
+    }
+  ],
+  "admin_alerts": [
+    {
+      "id": "alt-1",
+      "type": "new_members",
+      "title": "🎉 สมาชิกใหม่พุ่งสูงขึ้น",
+      "message": "มีสมาชิกใหม่สมัครเข้าใช้งานแล้ว 24 คนในวันนี้ เกินเป้าหมายรายวัน",
+      "threshold": "> 20 members/day",
+      "isRead": false,
+      "createdAt": "2026-09-16T13:45:06.716Z",
+      "severity": "medium"
+    },
+    {
+      "id": "alt-2",
+      "type": "activity_surge",
+      "title": "🔥 กิจกรรม \"ฝึกภาษา\" ได้รับความนิยมสูงขึ้น",
+      "message": "Activity \"ฝึกภาษาต่างประเทศ\" มีการเริ่มและเสร็จสิ้นเพิ่มขึ้น 45% เมื่อเทียบกับสัปดาห์ก่อน",
+      "threshold": "+30% growth",
+      "isRead": false,
+      "createdAt": "2026-09-16T12:30:06.716Z",
+      "severity": "low"
+    },
+    {
+      "id": "alt-3",
+      "type": "peak_users",
+      "title": "🟢 ผู้ใช้งาน Online พร้อมกัน",
+      "message": "มีผู้ใช้งานเข้าชมพร้อมกันแตะระดับ 28 เซสชันในชั่วโมงปัจจุบัน",
+      "threshold": "> 25 live users",
+      "isRead": true,
+      "createdAt": "2026-09-16T11:30:06.716Z",
+      "severity": "low"
+    }
+  ],
+  "settings": {
+    "sessionTimeoutMinutes": 5,
+    "heartbeatIntervalSeconds": 20,
+    "alertPeakUsersThreshold": 50,
+    "alertNewMembersDailyThreshold": 20,
+    "alertErrorRateThreshold": 5
+  }
+}

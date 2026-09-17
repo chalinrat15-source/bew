@@ -90,9 +90,17 @@ export const UserHome: React.FC<UserHomeProps> = ({
     }
   };
 
+  const [selectedHomeCategory, setSelectedHomeCategory] = useState<string>('all');
+  const [visibleCount, setVisibleCount] = useState<number>(12);
+
   const safeActivities = activities || [];
   const safeCategories = categories || [];
-  const featuredActivities = safeActivities.slice(0, 6);
+
+  const filteredActivities = selectedHomeCategory === 'all'
+    ? safeActivities
+    : safeActivities.filter((a) => a.categoryId === selectedHomeCategory);
+
+  const displayedActivities = filteredActivities.slice(0, visibleCount);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12 pb-20">
@@ -367,114 +375,182 @@ export const UserHome: React.FC<UserHomeProps> = ({
 
       {/* Trending Activities */}
       <section>
-        <div className="flex items-center justify-between mb-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center border border-amber-200">
               <TrendingUp className="w-4 h-4" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-slate-900 tracking-tight">กิจกรรมแนะนำประจำวัน</h2>
-              <p className="text-xs text-slate-500">กิจกรรมที่ผู้ใช้งานเริ่มทำและบอกต่อมากที่สุด</p>
+              <div className="flex items-center gap-2">
+                <h2 className="text-xl font-bold text-slate-900 tracking-tight">กิจกรรมแนะนำและยอดนิยม</h2>
+                <span className="px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 border border-blue-200">
+                  {filteredActivities.length} กิจกรรม
+                </span>
+              </div>
+              <p className="text-xs text-slate-500">เลือกหมวดหมู่ที่สนใจ หรือสำรวจกิจกรรมใหม่ๆ ที่อัปเดตล่าสุด</p>
             </div>
           </div>
           <button
             onClick={onGoToMatch}
             className="text-xs font-semibold text-blue-600 hover:text-blue-700 flex items-center gap-1 cursor-pointer"
           >
-            ดูกิจกรรมทั้งหมด
+            ค้นหาพร้อมตัวกรองละเอียด
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredActivities.map((act) => {
-            const isSaved = (savedIds || []).includes(act.id);
-            const isFav = (favoriteIds || []).includes(act.id);
-            const category = safeCategories.find((c) => c.id === act.categoryId);
-
+        {/* Quick Category Filter Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-6 no-scrollbar">
+          <button
+            onClick={() => {
+              setSelectedHomeCategory('all');
+              setVisibleCount(12);
+            }}
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
+              selectedHomeCategory === 'all'
+                ? 'bg-slate-900 text-white shadow-xs'
+                : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+            }`}
+          >
+            ทั้งหมด ({safeActivities.length})
+          </button>
+          {safeCategories.map((cat) => {
+            const count = safeActivities.filter((a) => a.categoryId === cat.id).length;
+            const isSelected = selectedHomeCategory === cat.id;
             return (
-              <div
-                key={act.id}
-                className="bg-white rounded-3xl border border-slate-200/90 hover:border-blue-300 p-5 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group"
+              <button
+                key={cat.id}
+                onClick={() => {
+                  setSelectedHomeCategory(cat.id);
+                  setVisibleCount(12);
+                }}
+                className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 cursor-pointer ${
+                  isSelected
+                    ? 'text-white shadow-xs'
+                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
+                }`}
+                style={isSelected ? { backgroundColor: cat.color } : {}}
               >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span
-                      className="px-2.5 py-0.5 rounded-lg text-xs font-semibold text-white shadow-2xs"
-                      style={{ backgroundColor: category?.color || '#3b82f6' }}
-                    >
-                      {category?.nameTh || 'กิจกรรม'}
-                    </span>
-                    <div className="flex items-center gap-1">
-                      <button
-                        onClick={() => onToggleFavorite(act.id)}
-                        className={`p-2 rounded-xl border transition-colors cursor-pointer ${
-                          isFav
-                            ? 'bg-rose-50 border-rose-200 text-rose-600'
-                            : 'bg-white border-slate-200 text-slate-400 hover:text-rose-500'
-                        }`}
-                        title="รายการโปรด"
-                      >
-                        <Heart className={`w-4 h-4 ${isFav ? 'fill-rose-500' : ''}`} />
-                      </button>
-                      <button
-                        onClick={() => onToggleSave(act.id)}
-                        className={`p-2 rounded-xl border transition-colors cursor-pointer ${
-                          isSaved
-                            ? 'bg-blue-50 border-blue-200 text-blue-600'
-                            : 'bg-white border-slate-200 text-slate-400 hover:text-blue-500'
-                        }`}
-                        title="บันทึกไว้"
-                      >
-                        <Bookmark className={`w-4 h-4 ${isSaved ? 'fill-blue-500' : ''}`} />
-                      </button>
-                    </div>
-                  </div>
-
-                  <h3
-                    onClick={() => onOpenActivityDetail(act)}
-                    className="font-bold text-slate-900 text-base group-hover:text-blue-600 transition-colors cursor-pointer line-clamp-1"
-                  >
-                    {act.titleTh}
-                  </h3>
-                  <p className="text-xs text-slate-400 mb-2">{act.title}</p>
-                  <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-4">
-                    {act.description}
-                  </p>
-                </div>
-
-                <div>
-                  <div className="flex items-center gap-3 text-xs text-slate-500 pt-3 border-t border-slate-100 mb-4">
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-slate-400" />
-                      {act.durationMinutes} นาที
-                    </span>
-                    <span className="flex items-center gap-1 capitalize">
-                      <Zap className="w-3.5 h-3.5 text-amber-500" />
-                      พลังงาน: {act.energyLevel === 'low' ? 'เบา' : act.energyLevel === 'medium' ? 'ปานกลาง' : 'สูง'}
-                    </span>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-2">
-                    <button
-                      onClick={() => onOpenActivityDetail(act)}
-                      className="w-full py-2.5 px-3 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors text-center cursor-pointer"
-                    >
-                      ดูวิธีทำ
-                    </button>
-                    <button
-                      onClick={() => onStartActivity(act)}
-                      className="w-full py-2.5 px-3 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors text-center flex items-center justify-center gap-1 cursor-pointer"
-                    >
-                      เริ่มเลย
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-              </div>
+                <span>{cat.nameTh}</span>
+                <span
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                    isSelected ? 'bg-black/20 text-white' : 'bg-slate-200 text-slate-600'
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
             );
           })}
         </div>
+
+        {displayedActivities.length === 0 ? (
+          <div className="py-16 text-center bg-white rounded-3xl border border-slate-200 p-8">
+            <p className="text-slate-500 text-sm">ไม่พบกิจกรรมในหมวดหมู่นี้</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {displayedActivities.map((act) => {
+              const isSaved = (savedIds || []).includes(act.id);
+              const isFav = (favoriteIds || []).includes(act.id);
+              const category = safeCategories.find((c) => c.id === act.categoryId);
+
+              return (
+                <div
+                  key={act.id}
+                  className="bg-white rounded-3xl border border-slate-200/90 hover:border-blue-300 p-5 shadow-xs hover:shadow-lg transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span
+                        className="px-2.5 py-0.5 rounded-lg text-xs font-semibold text-white shadow-2xs"
+                        style={{ backgroundColor: category?.color || '#3b82f6' }}
+                      >
+                        {category?.nameTh || 'กิจกรรม'}
+                      </span>
+                      <div className="flex items-center gap-1">
+                        <button
+                          onClick={() => onToggleFavorite(act.id)}
+                          className={`p-2 rounded-xl border transition-colors cursor-pointer ${
+                            isFav
+                              ? 'bg-rose-50 border-rose-200 text-rose-600'
+                              : 'bg-white border-slate-200 text-slate-400 hover:text-rose-500'
+                          }`}
+                          title="รายการโปรด"
+                        >
+                          <Heart className={`w-4 h-4 ${isFav ? 'fill-rose-500' : ''}`} />
+                        </button>
+                        <button
+                          onClick={() => onToggleSave(act.id)}
+                          className={`p-2 rounded-xl border transition-colors cursor-pointer ${
+                            isSaved
+                              ? 'bg-blue-50 border-blue-200 text-blue-600'
+                              : 'bg-white border-slate-200 text-slate-400 hover:text-blue-500'
+                          }`}
+                          title="บันทึกไว้"
+                        >
+                          <Bookmark className={`w-4 h-4 ${isSaved ? 'fill-blue-500' : ''}`} />
+                        </button>
+                      </div>
+                    </div>
+
+                    <h3
+                      onClick={() => onOpenActivityDetail(act)}
+                      className="font-bold text-slate-900 text-base group-hover:text-blue-600 transition-colors cursor-pointer line-clamp-1"
+                    >
+                      {act.titleTh}
+                    </h3>
+                    <p className="text-xs text-slate-400 mb-2">{act.title}</p>
+                    <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-4">
+                      {act.description}
+                    </p>
+                  </div>
+
+                  <div>
+                    <div className="flex items-center gap-3 text-xs text-slate-500 pt-3 border-t border-slate-100 mb-4">
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5 text-slate-400" />
+                        {act.durationMinutes} นาที
+                      </span>
+                      <span className="flex items-center gap-1 capitalize">
+                        <Zap className="w-3.5 h-3.5 text-amber-500" />
+                        พลังงาน: {act.energyLevel === 'low' ? 'เบา' : act.energyLevel === 'medium' ? 'ปานกลาง' : 'สูง'}
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2">
+                      <button
+                        onClick={() => onOpenActivityDetail(act)}
+                        className="w-full py-2.5 px-3 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors text-center cursor-pointer"
+                      >
+                        ดูวิธีทำ
+                      </button>
+                      <button
+                        onClick={() => onStartActivity(act)}
+                        className="w-full py-2.5 px-3 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors text-center flex items-center justify-center gap-1 cursor-pointer"
+                      >
+                        เริ่มเลย
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Show More Button */}
+        {filteredActivities.length > visibleCount && (
+          <div className="mt-8 text-center">
+            <button
+              onClick={() => setVisibleCount((prev) => prev + 12)}
+              className="px-6 py-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-2xl text-xs font-bold text-slate-700 shadow-xs hover:border-slate-300 transition-all cursor-pointer"
+            >
+              แสดงกิจกรรมเพิ่มเติม (เหลืออีก {filteredActivities.length - visibleCount} กิจกรรม)
+            </button>
+          </div>
+        )}
       </section>
 
       {/* Real-Time Analytics Banner */}
