@@ -6,11 +6,19 @@ import { User as UserType } from '../types';
 interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSuccess: (user: UserType) => void;
+  onSuccess?: (user: UserType) => void;
+  onAuthSuccess?: (user: UserType) => void;
+  initialMode?: 'login' | 'register';
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess }) => {
-  const [mode, setMode] = useState<'login' | 'register'>('login');
+export const AuthModal: React.FC<AuthModalProps> = ({
+  isOpen,
+  onClose,
+  onSuccess,
+  onAuthSuccess,
+  initialMode = 'login',
+}) => {
+  const [mode, setMode] = useState<'login' | 'register'>(initialMode);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -18,7 +26,18 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
   const [loading, setLoading] = useState(false);
   const [selectedInterests, setSelectedInterests] = useState<string[]>(['Learning', 'Health & Fitness']);
 
+  React.useEffect(() => {
+    if (initialMode) {
+      setMode(initialMode);
+    }
+  }, [initialMode, isOpen]);
+
   if (!isOpen) return null;
+
+  const handleSuccessCallback = (user: UserType) => {
+    if (onSuccess) onSuccess(user);
+    if (onAuthSuccess) onAuthSuccess(user);
+  };
 
   const interestsList = [
     'Learning',
@@ -39,7 +58,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
     try {
       if (mode === 'login') {
         const res = await api.login(email, password);
-        onSuccess(res.user);
+        handleSuccessCallback(res.user);
         onClose();
       } else {
         const res = await api.register({
@@ -48,7 +67,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
           fullName,
           interests: selectedInterests,
         });
-        onSuccess(res.user);
+        handleSuccessCallback(res.user);
         onClose();
       }
     } catch (err: any) {
@@ -63,7 +82,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
     setLoading(true);
     try {
       const res = await api.login(demoEmail, demoPass);
-      onSuccess(res.user);
+      handleSuccessCallback(res.user);
       onClose();
     } catch (err: any) {
       setError(err.message);
@@ -92,14 +111,46 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onSuccess
             <p className="text-xs text-slate-500 mt-0.5">
               {mode === 'login'
                 ? 'เข้าสู่ระบบเพื่อบันทึกประวัติกิจกรรมและสถิติส่วนบุคคล'
-                : 'สร้างบัญชีเพื่อรับคำแนะนำกิจกรรมที่เหมาะกับคุณโดยเฉพาะ'}
+                : 'กรอกข้อมูลเพื่อสร้างบัญชีผู้ใช้งานใหม่'}
             </p>
           </div>
           <button
             onClick={onClose}
-            className="p-1 text-slate-400 hover:text-slate-600 rounded-lg hover:bg-slate-100 transition-colors"
+            className="p-1.5 text-slate-400 hover:text-slate-600 rounded-xl hover:bg-slate-100 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Prominent Tab Switcher */}
+        <div className="grid grid-cols-2 p-2 bg-slate-100 border-b border-slate-200 text-xs font-semibold">
+          <button
+            type="button"
+            onClick={() => {
+              setMode('login');
+              setError('');
+            }}
+            className={`py-2 px-3 rounded-xl transition-all cursor-pointer text-center ${
+              mode === 'login'
+                ? 'bg-white text-slate-900 shadow-xs border border-slate-200/80 font-bold'
+                : 'text-slate-500 hover:text-slate-800'
+            }`}
+          >
+            เข้าสู่ระบบ (Sign In)
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setMode('register');
+              setError('');
+            }}
+            className={`py-2 px-3 rounded-xl transition-all cursor-pointer text-center ${
+              mode === 'register'
+                ? 'bg-blue-600 text-white shadow-xs font-bold'
+                : 'text-slate-500 hover:text-slate-800'
+            }`}
+          >
+            สมัครสมาชิกใหม่ (Sign Up)
           </button>
         </div>
 

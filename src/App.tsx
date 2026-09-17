@@ -82,7 +82,13 @@ export default function App() {
 
   // Modals & Drawers
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalMode, setAuthModalMode] = useState<'login' | 'register'>('login');
   const [isRecommendModalOpen, setIsRecommendModalOpen] = useState(false);
+
+  const handleOpenAuth = (mode: 'login' | 'register' = 'login') => {
+    setAuthModalMode(mode);
+    setIsAuthModalOpen(true);
+  };
   const [selectedActivityDetail, setSelectedActivityDetail] = useState<Activity | null>(null);
   const [activeSessionActivity, setActiveSessionActivity] = useState<Activity | null>(null);
 
@@ -221,7 +227,7 @@ export default function App() {
           }}
           activeUserTab={activeUserTab}
           onSelectUserTab={handleSelectTab}
-          onOpenAuth={() => setIsAuthModalOpen(true)}
+          onOpenAuth={handleOpenAuth}
           onOpenRecommendation={() => setIsRecommendModalOpen(true)}
           onLogout={handleLogout}
           onlineCount={onlineCount}
@@ -232,7 +238,7 @@ export default function App() {
           <AdminLayout
             currentUser={currentUser}
             onExitAdmin={() => setViewMode('user')}
-            onOpenAuth={() => setIsAuthModalOpen(true)}
+            onOpenAuth={() => handleOpenAuth('login')}
           />
         ) : (
           <main className="flex-1">
@@ -283,7 +289,7 @@ export default function App() {
                 categories={categories}
                 onGoToActivities={() => handleSelectTab('match')}
                 onOpenRecommend={() => setIsRecommendModalOpen(true)}
-                onOpenAuth={() => setIsAuthModalOpen(true)}
+                onOpenAuth={() => handleOpenAuth('login')}
               />
             )}
 
@@ -291,7 +297,7 @@ export default function App() {
               <UserProfileView
                 user={currentUser}
                 onUpdateUser={(updated) => setCurrentUser(updated)}
-                onOpenAuth={() => setIsAuthModalOpen(true)}
+                onOpenAuth={() => handleOpenAuth('login')}
               />
             )}
           </main>
@@ -300,6 +306,7 @@ export default function App() {
         {/* Authentication Modal */}
         <AuthModal
           isOpen={isAuthModalOpen}
+          initialMode={authModalMode}
           onClose={() => setIsAuthModalOpen(false)}
           onAuthSuccess={(user) => {
             setCurrentUser(user);

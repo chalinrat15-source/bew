@@ -558,6 +558,39 @@ async function startServer() {
     res.json(updated);
   });
 
+  app.post('/api/admin/members', (req: Request, res: Response) => {
+    const { email, password, fullName, role, status, interests, adminId, adminName } = req.body;
+
+    if (!email || !password || !fullName) {
+      return res.status(400).json({ error: 'กรุณากรอกข้อมูลให้ครบถ้วน (ชื่อ, อีเมล, รหัสผ่าน)' });
+    }
+
+    if (db.getUserByEmail(email)) {
+      return res.status(400).json({ error: 'อีเมลนี้ถูกใช้งานแล้วในระบบ (Email already in use)' });
+    }
+
+    const newUser = db.createUser({
+      email,
+      passwordHash: password,
+      fullName,
+      role: role === 'admin' ? 'admin' : 'member',
+      status: status || 'active',
+      interests: Array.isArray(interests) && interests.length > 0 ? interests : ['Learning', 'Health & Fitness'],
+      avatarUrl: `https://images.unsplash.com/photo-${1534528741775 + Math.floor(Math.random() * 1000)}?w=150&auto=format&fit=crop&q=80`,
+    });
+
+    db.logAdminAction({
+      adminId: adminId || 'usr-admin-1',
+      adminName: adminName || 'Admin',
+      action: 'Create Member',
+      targetType: 'member',
+      targetId: newUser.id,
+      description: `สร้างผู้ใช้งานใหม่: ${newUser.fullName} (${newUser.email}) บทบาท ${newUser.role}`,
+    });
+
+    res.status(201).json(newUser);
+  });
+
   app.get('/api/admin/activities', (req: Request, res: Response) => {
     res.json(db.getAllActivities());
   });

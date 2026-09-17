@@ -483,6 +483,30 @@ class ApiService {
     return res.json();
   }
 
+  public async createMemberAdmin(data: {
+    email: string;
+    password: string;
+    fullName: string;
+    role?: 'admin' | 'member';
+    status?: 'active' | 'suspended' | 'disabled';
+    interests?: string[];
+  }): Promise<User> {
+    const res = await fetch('/api/admin/members', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        ...data,
+        adminId: this.currentUser?.id,
+        adminName: this.currentUser?.fullName,
+      }),
+    });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error || 'สร้างผู้ใช้งานไม่สำเร็จ');
+    }
+    return res.json();
+  }
+
   public async updateMemberStatus(id: string, status: 'active' | 'suspended' | 'disabled') {
     const res = await fetch(`/api/admin/members/${id}/status`, {
       method: 'PUT',

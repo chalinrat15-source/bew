@@ -11,6 +11,7 @@ import {
   Bookmark,
   Sparkles,
   SlidersHorizontal,
+  UserPlus,
 } from 'lucide-react';
 import { User, AdminTab, UserTab } from '../types';
 
@@ -18,7 +19,7 @@ interface NavbarProps {
   currentView: 'user' | 'admin';
   onViewChange: (view: 'user' | 'admin') => void;
   user: User | null;
-  onOpenAuth: () => void;
+  onOpenAuth: (mode?: 'login' | 'register') => void;
   onLogout: () => void;
   userTab: UserTab;
   onUserTabChange: (tab: UserTab) => void;
@@ -193,13 +194,22 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
               </div>
             ) : (
-              <button
-                onClick={onOpenAuth}
-                className="px-3.5 py-1.5 text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 rounded-xl transition-colors shadow-xs flex items-center gap-1.5"
-              >
-                <LogIn className="w-3.5 h-3.5" />
-                เข้าสู่ระบบ / สมัคร
-              </button>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <button
+                  onClick={() => onOpenAuth('login')}
+                  className="px-2.5 sm:px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition-colors cursor-pointer flex items-center gap-1"
+                >
+                  <LogIn className="w-3.5 h-3.5 text-slate-500" />
+                  <span>เข้าสู่ระบบ</span>
+                </button>
+                <button
+                  onClick={() => onOpenAuth('register')}
+                  className="px-3 sm:px-3.5 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors shadow-xs flex items-center gap-1.5 cursor-pointer"
+                >
+                  <UserPlus className="w-3.5 h-3.5" />
+                  <span>สมัครสมาชิก</span>
+                </button>
+              </div>
             )}
           </div>
         </div>

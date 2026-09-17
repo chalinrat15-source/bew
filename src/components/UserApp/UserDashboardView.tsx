@@ -10,6 +10,7 @@ import {
   ArrowRight,
   LogIn,
   Sparkles,
+  UserPlus,
 } from 'lucide-react';
 import { User, Activity, Category, UserActivityProgress } from '../../types';
 import { api } from '../../services/api';
@@ -19,7 +20,7 @@ interface UserDashboardViewProps {
   categories?: Category[];
   onGoToActivities?: () => void;
   onOpenRecommend?: () => void;
-  onOpenAuth?: () => void;
+  onOpenAuth?: (mode?: 'login' | 'register') => void;
 }
 
 export const UserDashboardView: React.FC<UserDashboardViewProps> = ({
@@ -27,7 +28,7 @@ export const UserDashboardView: React.FC<UserDashboardViewProps> = ({
   categories = [],
   onGoToActivities = () => {},
   onOpenRecommend = () => {},
-  onOpenAuth = () => {},
+  onOpenAuth = (_mode?: 'login' | 'register') => {},
 }) => {
   const [history, setHistory] = useState<UserActivityProgress[]>([]);
   const [loading, setLoading] = useState(true);
@@ -67,13 +68,20 @@ export const UserDashboardView: React.FC<UserDashboardViewProps> = ({
           </p>
 
           {!user && (
-            <div className="mt-4 inline-flex items-center gap-2">
+            <div className="mt-4 flex flex-wrap items-center gap-2.5">
               <button
-                onClick={onOpenAuth}
+                onClick={() => onOpenAuth('login')}
                 className="px-4 py-2 bg-white text-slate-900 rounded-xl text-xs font-bold hover:bg-slate-100 transition-colors flex items-center gap-1.5 shadow-md cursor-pointer"
               >
                 <LogIn className="w-3.5 h-3.5" />
-                เข้าสู่ระบบเพื่อบันทึกสถิติอย่างถาวร
+                เข้าสู่ระบบ
+              </button>
+              <button
+                onClick={() => onOpenAuth('register')}
+                className="px-4 py-2 bg-blue-500 text-white rounded-xl text-xs font-bold hover:bg-blue-400 transition-colors flex items-center gap-1.5 shadow-md cursor-pointer"
+              >
+                <UserPlus className="w-3.5 h-3.5" />
+                สมัครสมาชิกใหม่
               </button>
             </div>
           )}

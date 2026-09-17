@@ -10,6 +10,7 @@ import {
   KeyRound,
   CheckCircle2,
   LogIn,
+  UserPlus,
 } from 'lucide-react';
 import { User } from '../../types';
 import { api } from '../../services/api';
@@ -17,13 +18,13 @@ import { api } from '../../services/api';
 interface UserProfileViewProps {
   user?: User | null;
   onUpdateUser?: (user: User) => void;
-  onOpenAuth?: () => void;
+  onOpenAuth?: (mode?: 'login' | 'register') => void;
 }
 
 export const UserProfileView: React.FC<UserProfileViewProps> = ({
   user,
   onUpdateUser = (_u: User) => {},
-  onOpenAuth = () => {},
+  onOpenAuth = (_mode?: 'login' | 'register') => {},
 }) => {
   const [fullName, setFullName] = useState(user?.fullName || '');
   const [interests, setInterests] = useState<string[]>(
@@ -58,13 +59,22 @@ export const UserProfileView: React.FC<UserProfileViewProps> = ({
           <p className="text-xs text-slate-500 mb-6 max-w-md mx-auto">
             คุณยังไม่ได้เข้าสู่ระบบ เข้าสู่ระบบเพื่อปรับแต่งข้อมูลส่วนตัว เลือกกิจกรรมที่สนใจ และบันทึกประวัติการใช้งาน
           </p>
-          <button
-            onClick={onOpenAuth}
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition-colors shadow-xs inline-flex items-center gap-2 cursor-pointer"
-          >
-            <LogIn className="w-4 h-4" />
-            เข้าสู่ระบบ / สมัครสมาชิก
-          </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button
+              onClick={() => onOpenAuth('login')}
+              className="w-full sm:w-auto px-6 py-2.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition-colors shadow-xs inline-flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <LogIn className="w-4 h-4" />
+              เข้าสู่ระบบ (Sign In)
+            </button>
+            <button
+              onClick={() => onOpenAuth('register')}
+              className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition-colors shadow-xs inline-flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <UserPlus className="w-4 h-4" />
+              สมัครสมาชิกใหม่ (Register)
+            </button>
+          </div>
         </div>
       </div>
     );
